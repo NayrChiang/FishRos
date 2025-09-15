@@ -1,0 +1,38 @@
+[0.245s] Invoking command in '/home/nayr/ch2/ch2_ws/src/demo_python_pkg': PYTHONPATH=/home/nayr/ch2/ch2_ws/build/demo_python_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nayr/ch2/ch2_ws/install/demo_python_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/demo_python_pkg build --build-base /home/nayr/ch2/ch2_ws/build/demo_python_pkg/build install --record /home/nayr/ch2/ch2_ws/build/demo_python_pkg/install.log --single-version-externally-managed install_data
+[0.342s] running egg_info
+[0.342s] creating ../../build/demo_python_pkg/demo_python_pkg.egg-info
+[0.342s] writing ../../build/demo_python_pkg/demo_python_pkg.egg-info/PKG-INFO
+[0.343s] writing dependency_links to ../../build/demo_python_pkg/demo_python_pkg.egg-info/dependency_links.txt
+[0.343s] writing entry points to ../../build/demo_python_pkg/demo_python_pkg.egg-info/entry_points.txt
+[0.343s] writing requirements to ../../build/demo_python_pkg/demo_python_pkg.egg-info/requires.txt
+[0.343s] writing top-level names to ../../build/demo_python_pkg/demo_python_pkg.egg-info/top_level.txt
+[0.343s] writing manifest file '../../build/demo_python_pkg/demo_python_pkg.egg-info/SOURCES.txt'
+[0.344s] reading manifest file '../../build/demo_python_pkg/demo_python_pkg.egg-info/SOURCES.txt'
+[0.344s] adding license file 'LICENSE'
+[0.344s] writing manifest file '../../build/demo_python_pkg/demo_python_pkg.egg-info/SOURCES.txt'
+[0.344s] running build
+[0.344s] running build_py
+[0.345s] creating /home/nayr/ch2/ch2_ws/build/demo_python_pkg/build
+[0.345s] creating /home/nayr/ch2/ch2_ws/build/demo_python_pkg/build/lib
+[0.345s] creating /home/nayr/ch2/ch2_ws/build/demo_python_pkg/build/lib/demo_python_pkg
+[0.345s] copying demo_python_pkg/python_node.py -> /home/nayr/ch2/ch2_ws/build/demo_python_pkg/build/lib/demo_python_pkg
+[0.345s] copying demo_python_pkg/__init__.py -> /home/nayr/ch2/ch2_ws/build/demo_python_pkg/build/lib/demo_python_pkg
+[0.345s] running install
+[0.345s] running install_lib
+[0.345s] creating /home/nayr/ch2/ch2_ws/install/demo_python_pkg/lib/python3.10/site-packages/demo_python_pkg
+[0.345s] copying /home/nayr/ch2/ch2_ws/build/demo_python_pkg/build/lib/demo_python_pkg/python_node.py -> /home/nayr/ch2/ch2_ws/install/demo_python_pkg/lib/python3.10/site-packages/demo_python_pkg
+[0.345s] copying /home/nayr/ch2/ch2_ws/build/demo_python_pkg/build/lib/demo_python_pkg/__init__.py -> /home/nayr/ch2/ch2_ws/install/demo_python_pkg/lib/python3.10/site-packages/demo_python_pkg
+[0.346s] byte-compiling /home/nayr/ch2/ch2_ws/install/demo_python_pkg/lib/python3.10/site-packages/demo_python_pkg/python_node.py to python_node.cpython-310.pyc
+[0.346s] byte-compiling /home/nayr/ch2/ch2_ws/install/demo_python_pkg/lib/python3.10/site-packages/demo_python_pkg/__init__.py to __init__.cpython-310.pyc
+[0.346s] running install_data
+[0.346s] creating /home/nayr/ch2/ch2_ws/install/demo_python_pkg/share/ament_index
+[0.346s] creating /home/nayr/ch2/ch2_ws/install/demo_python_pkg/share/ament_index/resource_index
+[0.346s] creating /home/nayr/ch2/ch2_ws/install/demo_python_pkg/share/ament_index/resource_index/packages
+[0.346s] copying resource/demo_python_pkg -> /home/nayr/ch2/ch2_ws/install/demo_python_pkg/share/ament_index/resource_index/packages
+[0.346s] copying package.xml -> /home/nayr/ch2/ch2_ws/install/demo_python_pkg/share/demo_python_pkg
+[0.346s] running install_egg_info
+[0.347s] Copying ../../build/demo_python_pkg/demo_python_pkg.egg-info to /home/nayr/ch2/ch2_ws/install/demo_python_pkg/lib/python3.10/site-packages/demo_python_pkg-0.0.0-py3.10.egg-info
+[0.347s] running install_scripts
+[0.356s] Installing python_node script to /home/nayr/ch2/ch2_ws/install/demo_python_pkg/lib/demo_python_pkg
+[0.356s] writing list of installed files to '/home/nayr/ch2/ch2_ws/build/demo_python_pkg/install.log'
+[0.370s] Invoked command in '/home/nayr/ch2/ch2_ws/src/demo_python_pkg' returned '0': PYTHONPATH=/home/nayr/ch2/ch2_ws/build/demo_python_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nayr/ch2/ch2_ws/install/demo_python_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/demo_python_pkg build --build-base /home/nayr/ch2/ch2_ws/build/demo_python_pkg/build install --record /home/nayr/ch2/ch2_ws/build/demo_python_pkg/install.log --single-version-externally-managed install_data
