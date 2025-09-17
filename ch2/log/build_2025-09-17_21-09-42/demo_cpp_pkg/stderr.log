@@ -1,0 +1,8 @@
+[01m[K/home/nayr/FishRos/ch2/ch2_ws/src/demo_cpp_pkg/src/learn_lambda.cpp:[m[K In function ‘[01m[Kint main()[m[K’:
+[01m[K/home/nayr/FishRos/ch2/ch2_ws/src/demo_cpp_pkg/src/learn_lambda.cpp:14:5:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K;[m[K’ before ‘[01m[Kprint_sum[m[K’
+   14 |     [01;31m[Kprint_sum[m[K();
+      |     [01;31m[K^~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/learn_lambda.dir/build.make:76: CMakeFiles/learn_lambda.dir/src/learn_lambda.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:249: CMakeFiles/learn_lambda.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake: *** [Makefile:146: all] Error 2
