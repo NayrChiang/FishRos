@@ -6,6 +6,7 @@
 /home/nayr/FishRos/ch2/build/demo_cpp_pkg/CMakeFiles/learn_shared_ptr.dir
 /home/nayr/FishRos/ch2/build/demo_cpp_pkg/CMakeFiles/learn_lambda.dir
 /home/nayr/FishRos/ch2/build/demo_cpp_pkg/CMakeFiles/learn_functional.dir
+/home/nayr/FishRos/ch2/build/demo_cpp_pkg/CMakeFiles/learn_thread.dir
 /home/nayr/FishRos/ch2/build/demo_cpp_pkg/CMakeFiles/test.dir
 /home/nayr/FishRos/ch2/build/demo_cpp_pkg/CMakeFiles/edit_cache.dir
 /home/nayr/FishRos/ch2/build/demo_cpp_pkg/CMakeFiles/rebuild_cache.dir
