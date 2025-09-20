@@ -5,7 +5,7 @@ class Download:
     def download(self, url, callback_word_count):
         print(f"Thread: {threading.get_ident()} Start downloading: {url}")
         response = requests.get(url)
-        response.encoding = 'uft-8'
+        response.encoding = 'utf-8'
         callback_word_count(url, response.text)
 
     def start_download(self, url, callback_word_count):
