@@ -1,0 +1,6 @@
+Invoking command in '/home/nayr/FishRos/ch4/ch4_ws/build/ch4_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/nayr/FishRos/ch4/ch4_ws/src/ch4_interfaces -DCMAKE_INSTALL_PREFIX=/home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces
+Invoked command in '/home/nayr/FishRos/ch4/ch4_ws/build/ch4_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/nayr/FishRos/ch4/ch4_ws/src/ch4_interfaces -DCMAKE_INSTALL_PREFIX=/home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces
+Invoking command in '/home/nayr/FishRos/ch4/ch4_ws/build/ch4_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/nayr/FishRos/ch4/ch4_ws/build/ch4_interfaces -- -j4 -l4
+Invoked command in '/home/nayr/FishRos/ch4/ch4_ws/build/ch4_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/nayr/FishRos/ch4/ch4_ws/build/ch4_interfaces -- -j4 -l4
+Invoking command in '/home/nayr/FishRos/ch4/ch4_ws/build/ch4_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/nayr/FishRos/ch4/ch4_ws/build/ch4_interfaces
+Invoked command in '/home/nayr/FishRos/ch4/ch4_ws/build/ch4_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/nayr/FishRos/ch4/ch4_ws/build/ch4_interfaces

@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "ch4_interfaces__py",
+		"source" : "/home/nayr/FishRos/ch4/ch4_ws/build/ch4_interfaces/ch4_interfaces__py"
+	}
+}
