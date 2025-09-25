@@ -4,7 +4,9 @@
             "name": "Linux",
             "includePath": [
                 "${workspaceFolder}/**",
-                "/opt/ros/humble/include/**"
+                "/opt/ros/humble/include/**",
+                "/usr/include/aarch64-linux-gnu/qt5/**",
+                "${workspaceFolder}/topic_practice_ws/install/status_interfaces/include/status_interfaces"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/gcc",
