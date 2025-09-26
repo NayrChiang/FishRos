@@ -7,6 +7,8 @@ from ament_index_python.packages import get_package_share_directory
 import os
 from cv_bridge import CvBridge
 import time
+from rcl_interfaces.srv import SetParameters
+from rcl_interfaces.msg import Parameter, ParameterValue, ParameterType
 
 class FaceDetectClientNode(Node):
     def __init__(self):
@@ -16,6 +18,36 @@ class FaceDetectClientNode(Node):
         self.get_logger().info("Face Detector Client Node Initialized!")
         self.client = self.create_client(FaceDetector, 'face_detector')
         self.image = cv2.imread(self.default_image_path)
+        
+    def call_set_param(self, parameters):
+        # 1. create client
+        update_param = self.create_client(SetParameters, '/face_detect_node/set_parameters')
+        while update_param.wait_for_service(timeout_sec=1.0) is False:
+            self.get_logger().info("Wait for parameter update service client to start!")
+        # 2. create request 
+        request = SetParameters.Request()
+        request.parameters = parameters
+        # 3. update parameters using server 
+        future = update_param.call_async(request)
+        rclpy.spin_until_future_complete(self, future)
+        response = future.result()
+        return response
+    
+    def update_detect_model(self, model='hog'):
+        # 1. create paramters
+        param = Parameter()
+        param.name = 'model'
+        # 2. assign value
+        param_value = ParameterValue()
+        param_value.string_value = model
+        param_value.type = ParameterType.PARAMETER_STRING
+        param.value = param_value
+        # 3. request parameter update
+        response = self.call_set_param([param])
+        for result in response.results:
+            self.get_logger().info(f"Update parameters result: {result.successful} {result.reason}.")
+        
+        
         
     def send_request(self):
         while self.client.wait_for_service(timeout_sec=1.0) is False:
@@ -28,7 +60,7 @@ class FaceDetectClientNode(Node):
         def result_callback(result_future):
             response = result_future.result()
             self.get_logger().info("Received response.")
-            self.show_response(response)
+            # self.show_response(response)
             
         future.add_done_callback(result_callback)
     
@@ -40,13 +72,16 @@ class FaceDetectClientNode(Node):
             left = response.left[i]
             cv2.rectangle(self.image, (left, top), (right, bottom), (255, 0, 0), 4)
             
-        cv2.imshow('Face Detect Result', self.image)
-        cv2.waitKey(0)
+        # cv2.imshow('Face Detect Result', self.image)
+        # cv2.waitKey(0)
       
       
 def main():
     rclpy.init()
     node = FaceDetectClientNode()
+    node.update_detect_model('hog')
+    node.send_request()
+    node.update_detect_model('cnn')
     node.send_request()
     rclpy.spin(node)
     rclpy.shutdown()
