@@ -1,10 +1,15 @@
+/home/nayr/FishRos/ch4/ch4_ws/install/demo_python_service/lib/python3.10/site-packages/demo_python_service/face_detect_client_node.py
+/home/nayr/FishRos/ch4/ch4_ws/install/demo_python_service/lib/python3.10/site-packages/demo_python_service/face_detect_node.py
 /home/nayr/FishRos/ch4/ch4_ws/install/demo_python_service/lib/python3.10/site-packages/demo_python_service/learn_face_detect.py
 /home/nayr/FishRos/ch4/ch4_ws/install/demo_python_service/lib/python3.10/site-packages/demo_python_service/__init__.py
+/home/nayr/FishRos/ch4/ch4_ws/install/demo_python_service/lib/python3.10/site-packages/demo_python_service/__pycache__/face_detect_client_node.cpython-310.pyc
+/home/nayr/FishRos/ch4/ch4_ws/install/demo_python_service/lib/python3.10/site-packages/demo_python_service/__pycache__/face_detect_node.cpython-310.pyc
 /home/nayr/FishRos/ch4/ch4_ws/install/demo_python_service/lib/python3.10/site-packages/demo_python_service/__pycache__/learn_face_detect.cpython-310.pyc
 /home/nayr/FishRos/ch4/ch4_ws/install/demo_python_service/lib/python3.10/site-packages/demo_python_service/__pycache__/__init__.cpython-310.pyc
 /home/nayr/FishRos/ch4/ch4_ws/install/demo_python_service/share/ament_index/resource_index/packages/demo_python_service
 /home/nayr/FishRos/ch4/ch4_ws/install/demo_python_service/share/demo_python_service/package.xml
 /home/nayr/FishRos/ch4/ch4_ws/install/demo_python_service/share/demo_python_service/resource/default.jpg
+/home/nayr/FishRos/ch4/ch4_ws/install/demo_python_service/share/demo_python_service/resource/test1.jpg
 /home/nayr/FishRos/ch4/ch4_ws/install/demo_python_service/lib/python3.10/site-packages/demo_python_service-0.0.0-py3.10.egg-info/zip-safe
 /home/nayr/FishRos/ch4/ch4_ws/install/demo_python_service/lib/python3.10/site-packages/demo_python_service-0.0.0-py3.10.egg-info/top_level.txt
 /home/nayr/FishRos/ch4/ch4_ws/install/demo_python_service/lib/python3.10/site-packages/demo_python_service-0.0.0-py3.10.egg-info/SOURCES.txt
@@ -12,4 +17,6 @@
 /home/nayr/FishRos/ch4/ch4_ws/install/demo_python_service/lib/python3.10/site-packages/demo_python_service-0.0.0-py3.10.egg-info/entry_points.txt
 /home/nayr/FishRos/ch4/ch4_ws/install/demo_python_service/lib/python3.10/site-packages/demo_python_service-0.0.0-py3.10.egg-info/requires.txt
 /home/nayr/FishRos/ch4/ch4_ws/install/demo_python_service/lib/python3.10/site-packages/demo_python_service-0.0.0-py3.10.egg-info/dependency_links.txt
+/home/nayr/FishRos/ch4/ch4_ws/install/demo_python_service/lib/demo_python_service/face_detect_client_node
+/home/nayr/FishRos/ch4/ch4_ws/install/demo_python_service/lib/demo_python_service/face_detect_node
 /home/nayr/FishRos/ch4/ch4_ws/install/demo_python_service/lib/demo_python_service/learn_face_detect
