@@ -360,6 +360,10 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ch4_interfaces/srv" TYPE FILE FILES "/home/nayr/FishRos/ch4/ch4_ws/build/ch4_interfaces/rosidl_adapter/ch4_interfaces/srv/Patrol.idl")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ch4_interfaces/srv" TYPE FILE FILES "/home/nayr/FishRos/ch4/ch4_ws/src/ch4_interfaces/srv/FaceDetector.srv")
 endif()
 
@@ -369,6 +373,18 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ch4_interfaces/srv" TYPE FILE FILES "/home/nayr/FishRos/ch4/ch4_ws/build/ch4_interfaces/rosidl_cmake/srv/FaceDetector_Response.msg")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ch4_interfaces/srv" TYPE FILE FILES "/home/nayr/FishRos/ch4/ch4_ws/src/ch4_interfaces/srv/Patrol.srv")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ch4_interfaces/srv" TYPE FILE FILES "/home/nayr/FishRos/ch4/ch4_ws/build/ch4_interfaces/rosidl_cmake/srv/Patrol_Request.msg")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ch4_interfaces/srv" TYPE FILE FILES "/home/nayr/FishRos/ch4/ch4_ws/build/ch4_interfaces/rosidl_cmake/srv/Patrol_Response.msg")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)

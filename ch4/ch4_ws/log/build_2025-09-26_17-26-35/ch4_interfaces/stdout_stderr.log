@@ -1,0 +1,259 @@
+-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found rclcpp: 16.0.14 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+-- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+-- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.10.so
+-- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/nayr/FishRos/ch4/ch4_ws/build/ch4_interfaces
+[  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[  5%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[  5%] Built target ament_cmake_python_copy_ch4_interfaces
+running egg_info
+writing ch4_interfaces.egg-info/PKG-INFO
+writing dependency_links to ch4_interfaces.egg-info/dependency_links.txt
+writing top-level names to ch4_interfaces.egg-info/top_level.txt
+reading manifest file 'ch4_interfaces.egg-info/SOURCES.txt'
+writing manifest file 'ch4_interfaces.egg-info/SOURCES.txt'
+[  5%] Built target ament_cmake_python_build_ch4_interfaces_egg
+[35m[1mConsolidate compiler generated dependencies of target ch4_interfaces__rosidl_generator_c[0m
+[  7%] [32mBuilding C object CMakeFiles/ch4_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ch4_interfaces/srv/detail/face_detector__functions.c.o[0m
+[ 10%] [32mBuilding C object CMakeFiles/ch4_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ch4_interfaces/srv/detail/patrol__functions.c.o[0m
+[ 10%] Built target ch4_interfaces__cpp
+[ 15%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[ 15%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[ 17%] [32m[1mLinking C shared library libch4_interfaces__rosidl_generator_c.so[0m
+[ 20%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[ 20%] Built target ch4_interfaces__rosidl_generator_c
+[ 23%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[35m[1mConsolidate compiler generated dependencies of target ch4_interfaces__rosidl_typesupport_cpp[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/ch4_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ch4_interfaces/srv/face_detector__type_support.cpp.o[0m
+[35m[1mConsolidate compiler generated dependencies of target ch4_interfaces__rosidl_typesupport_fastrtps_cpp[0m
+[ 28%] [32mBuilding CXX object CMakeFiles/ch4_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ch4_interfaces/srv/detail/dds_fastrtps/face_detector__type_support.cpp.o[0m
+[35m[1mConsolidate compiler generated dependencies of target ch4_interfaces__rosidl_typesupport_fastrtps_c[0m
+[ 30%] [32mBuilding CXX object CMakeFiles/ch4_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ch4_interfaces/srv/detail/face_detector__type_support_c.cpp.o[0m
+[35m[1mConsolidate compiler generated dependencies of target ch4_interfaces__rosidl_typesupport_introspection_cpp[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/ch4_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ch4_interfaces/srv/detail/face_detector__type_support.cpp.o[0m
+[ 35%] [32mBuilding CXX object CMakeFiles/ch4_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ch4_interfaces/srv/patrol__type_support.cpp.o[0m
+[ 38%] [32m[1mLinking CXX shared library libch4_interfaces__rosidl_typesupport_cpp.so[0m
+[ 41%] [32mBuilding CXX object CMakeFiles/ch4_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ch4_interfaces/srv/detail/patrol__type_support_c.cpp.o[0m
+[ 43%] [32mBuilding CXX object CMakeFiles/ch4_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ch4_interfaces/srv/detail/dds_fastrtps/patrol__type_support.cpp.o[0m
+[ 43%] Built target ch4_interfaces__rosidl_typesupport_cpp
+[ 46%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[ 48%] [32mBuilding CXX object CMakeFiles/ch4_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ch4_interfaces/srv/detail/patrol__type_support.cpp.o[0m
+[ 51%] [32m[1mLinking CXX shared library libch4_interfaces__rosidl_typesupport_fastrtps_c.so[0m
+[ 53%] [32m[1mLinking CXX shared library libch4_interfaces__rosidl_typesupport_fastrtps_cpp.so[0m
+[ 53%] Built target ch4_interfaces__rosidl_typesupport_fastrtps_c
+[ 56%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[35m[1mConsolidate compiler generated dependencies of target ch4_interfaces__rosidl_typesupport_introspection_c[0m
+[ 58%] [32mBuilding C object CMakeFiles/ch4_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ch4_interfaces/srv/detail/face_detector__type_support.c.o[0m
+[ 58%] Built target ch4_interfaces__rosidl_typesupport_fastrtps_cpp
+[ 61%] [32mBuilding C object CMakeFiles/ch4_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ch4_interfaces/srv/detail/patrol__type_support.c.o[0m
+[ 64%] [32m[1mLinking C shared library libch4_interfaces__rosidl_typesupport_introspection_c.so[0m
+[ 64%] Built target ch4_interfaces__rosidl_typesupport_introspection_c
+[ 66%] [32m[1mLinking CXX shared library libch4_interfaces__rosidl_typesupport_introspection_cpp.so[0m
+[ 66%] Built target ch4_interfaces__rosidl_typesupport_introspection_cpp
+[35m[1mConsolidate compiler generated dependencies of target ch4_interfaces__rosidl_typesupport_c[0m
+[ 71%] [32mBuilding CXX object CMakeFiles/ch4_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/ch4_interfaces/srv/face_detector__type_support.cpp.o[0m
+[ 71%] [32mBuilding CXX object CMakeFiles/ch4_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/ch4_interfaces/srv/patrol__type_support.cpp.o[0m
+[ 74%] [32m[1mLinking CXX shared library libch4_interfaces__rosidl_typesupport_c.so[0m
+[ 74%] Built target ch4_interfaces__rosidl_typesupport_c
+[ 74%] Built target ch4_interfaces
+[ 76%] [34m[1mGenerating Python code for ROS interfaces[0m
+[ 76%] Built target ch4_interfaces__py
+[35m[1mConsolidate compiler generated dependencies of target ch4_interfaces__rosidl_generator_py[0m
+[ 82%] [32mBuilding C object CMakeFiles/ch4_interfaces__rosidl_generator_py.dir/rosidl_generator_py/ch4_interfaces/srv/_patrol_s.c.o[0m
+[ 82%] [32mBuilding C object CMakeFiles/ch4_interfaces__rosidl_generator_py.dir/rosidl_generator_py/ch4_interfaces/srv/_face_detector_s.c.o[0m
+[ 84%] [32m[1mLinking C shared library rosidl_generator_py/ch4_interfaces/libch4_interfaces__rosidl_generator_py.so[0m
+[ 84%] Built target ch4_interfaces__rosidl_generator_py
+[35m[1mConsolidate compiler generated dependencies of target ch4_interfaces__rosidl_typesupport_introspection_c__pyext[0m
+[35m[1mConsolidate compiler generated dependencies of target ch4_interfaces__rosidl_typesupport_fastrtps_c__pyext[0m
+[35m[1mConsolidate compiler generated dependencies of target ch4_interfaces__rosidl_typesupport_c__pyext[0m
+[ 87%] [32mBuilding C object CMakeFiles/ch4_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/ch4_interfaces/_ch4_interfaces_s.ep.rosidl_typesupport_c.c.o[0m
+[ 89%] [32mBuilding C object CMakeFiles/ch4_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/ch4_interfaces/_ch4_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[ 92%] [32mBuilding C object CMakeFiles/ch4_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/ch4_interfaces/_ch4_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[ 94%] [32m[1mLinking C shared library rosidl_generator_py/ch4_interfaces/ch4_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so[0m
+[ 97%] [32m[1mLinking C shared library rosidl_generator_py/ch4_interfaces/ch4_interfaces_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so[0m
+[100%] [32m[1mLinking C shared library rosidl_generator_py/ch4_interfaces/ch4_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so[0m
+[100%] Built target ch4_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[100%] Built target ch4_interfaces__rosidl_typesupport_c__pyext
+[100%] Built target ch4_interfaces__rosidl_typesupport_introspection_c__pyext
+-- Install configuration: ""
+-- Installing: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/share/ament_index/resource_index/rosidl_interfaces/ch4_interfaces
+-- Up-to-date: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/include/ch4_interfaces/ch4_interfaces
+-- Up-to-date: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/include/ch4_interfaces/ch4_interfaces/srv
+-- Up-to-date: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/include/ch4_interfaces/ch4_interfaces/srv/detail
+-- Installing: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/include/ch4_interfaces/ch4_interfaces/srv/detail/face_detector__type_support.h
+-- Installing: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/include/ch4_interfaces/ch4_interfaces/srv/detail/face_detector__functions.c
+-- Installing: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/include/ch4_interfaces/ch4_interfaces/srv/detail/patrol__struct.h
+-- Installing: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/include/ch4_interfaces/ch4_interfaces/srv/detail/patrol__functions.h
+-- Installing: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/include/ch4_interfaces/ch4_interfaces/srv/detail/patrol__functions.c
+-- Installing: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/include/ch4_interfaces/ch4_interfaces/srv/detail/face_detector__functions.h
+-- Installing: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/include/ch4_interfaces/ch4_interfaces/srv/detail/face_detector__struct.h
+-- Installing: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/include/ch4_interfaces/ch4_interfaces/srv/detail/patrol__type_support.h
+-- Installing: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/include/ch4_interfaces/ch4_interfaces/srv/patrol.h
+-- Installing: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/include/ch4_interfaces/ch4_interfaces/srv/face_detector.h
+-- Up-to-date: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/include/ch4_interfaces/ch4_interfaces/msg
+-- Up-to-date: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/include/ch4_interfaces/ch4_interfaces/msg/rosidl_generator_c__visibility_control.h
+-- Up-to-date: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/share/ch4_interfaces/environment/library_path.sh
+-- Installing: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/share/ch4_interfaces/environment/library_path.dsv
+-- Installing: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/lib/libch4_interfaces__rosidl_generator_c.so
+-- Set runtime path of "/home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/lib/libch4_interfaces__rosidl_generator_c.so" to ""
+-- Up-to-date: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/include/ch4_interfaces/ch4_interfaces
+-- Up-to-date: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/include/ch4_interfaces/ch4_interfaces/srv
+-- Up-to-date: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/include/ch4_interfaces/ch4_interfaces/srv/detail
+-- Installing: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/include/ch4_interfaces/ch4_interfaces/srv/detail/patrol__rosidl_typesupport_fastrtps_c.h
+-- Installing: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/include/ch4_interfaces/ch4_interfaces/srv/detail/face_detector__rosidl_typesupport_fastrtps_c.h
+-- Up-to-date: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/include/ch4_interfaces/ch4_interfaces/msg
+-- Up-to-date: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/include/ch4_interfaces/ch4_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+-- Installing: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/lib/libch4_interfaces__rosidl_typesupport_fastrtps_c.so
+-- Set runtime path of "/home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/lib/libch4_interfaces__rosidl_typesupport_fastrtps_c.so" to ""
+-- Up-to-date: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/include/ch4_interfaces/ch4_interfaces
+-- Up-to-date: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/include/ch4_interfaces/ch4_interfaces/srv
+-- Up-to-date: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/include/ch4_interfaces/ch4_interfaces/srv/detail
+-- Installing: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/include/ch4_interfaces/ch4_interfaces/srv/detail/patrol__struct.hpp
+-- Installing: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/include/ch4_interfaces/ch4_interfaces/srv/detail/patrol__traits.hpp
+-- Installing: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/include/ch4_interfaces/ch4_interfaces/srv/detail/face_detector__struct.hpp
+-- Installing: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/include/ch4_interfaces/ch4_interfaces/srv/detail/face_detector__builder.hpp
+-- Installing: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/include/ch4_interfaces/ch4_interfaces/srv/detail/patrol__builder.hpp
+-- Installing: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/include/ch4_interfaces/ch4_interfaces/srv/detail/face_detector__type_support.hpp
+-- Installing: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/include/ch4_interfaces/ch4_interfaces/srv/detail/face_detector__traits.hpp
+-- Installing: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/include/ch4_interfaces/ch4_interfaces/srv/detail/patrol__type_support.hpp
+-- Installing: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/include/ch4_interfaces/ch4_interfaces/srv/patrol.hpp
+-- Installing: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/include/ch4_interfaces/ch4_interfaces/srv/face_detector.hpp
+-- Up-to-date: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/include/ch4_interfaces/ch4_interfaces/msg
+-- Up-to-date: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/include/ch4_interfaces/ch4_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
+-- Up-to-date: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/include/ch4_interfaces/ch4_interfaces
+-- Up-to-date: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/include/ch4_interfaces/ch4_interfaces/srv
+-- Up-to-date: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/include/ch4_interfaces/ch4_interfaces/srv/detail
+-- Installing: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/include/ch4_interfaces/ch4_interfaces/srv/detail/patrol__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/include/ch4_interfaces/ch4_interfaces/srv/detail/face_detector__rosidl_typesupport_fastrtps_cpp.hpp
+-- Up-to-date: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/include/ch4_interfaces/ch4_interfaces/srv/detail/dds_fastrtps
+-- Up-to-date: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/include/ch4_interfaces/ch4_interfaces/msg
+-- Up-to-date: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/include/ch4_interfaces/ch4_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+-- Installing: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/lib/libch4_interfaces__rosidl_typesupport_fastrtps_cpp.so
+-- Set runtime path of "/home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/lib/libch4_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""
+-- Up-to-date: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/include/ch4_interfaces/ch4_interfaces
+-- Up-to-date: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/include/ch4_interfaces/ch4_interfaces/srv
+-- Up-to-date: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/include/ch4_interfaces/ch4_interfaces/srv/detail
+-- Installing: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/include/ch4_interfaces/ch4_interfaces/srv/detail/face_detector__type_support.c
+-- Installing: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/include/ch4_interfaces/ch4_interfaces/srv/detail/face_detector__rosidl_typesupport_introspection_c.h
+-- Installing: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/include/ch4_interfaces/ch4_interfaces/srv/detail/patrol__rosidl_typesupport_introspection_c.h
+-- Installing: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/include/ch4_interfaces/ch4_interfaces/srv/detail/patrol__type_support.c
+-- Up-to-date: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/include/ch4_interfaces/ch4_interfaces/msg
+-- Up-to-date: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/include/ch4_interfaces/ch4_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+-- Installing: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/lib/libch4_interfaces__rosidl_typesupport_introspection_c.so
+-- Set runtime path of "/home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/lib/libch4_interfaces__rosidl_typesupport_introspection_c.so" to ""
+-- Installing: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/lib/libch4_interfaces__rosidl_typesupport_c.so
+-- Set runtime path of "/home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/lib/libch4_interfaces__rosidl_typesupport_c.so" to ""
+-- Up-to-date: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/include/ch4_interfaces/ch4_interfaces
+-- Up-to-date: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/include/ch4_interfaces/ch4_interfaces/srv
+-- Up-to-date: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/include/ch4_interfaces/ch4_interfaces/srv/detail
+-- Installing: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/include/ch4_interfaces/ch4_interfaces/srv/detail/face_detector__type_support.cpp
+-- Installing: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/include/ch4_interfaces/ch4_interfaces/srv/detail/patrol__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/include/ch4_interfaces/ch4_interfaces/srv/detail/face_detector__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/include/ch4_interfaces/ch4_interfaces/srv/detail/patrol__type_support.cpp
+-- Installing: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/lib/libch4_interfaces__rosidl_typesupport_introspection_cpp.so
+-- Set runtime path of "/home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/lib/libch4_interfaces__rosidl_typesupport_introspection_cpp.so" to ""
+-- Installing: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/lib/libch4_interfaces__rosidl_typesupport_cpp.so
+-- Set runtime path of "/home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/lib/libch4_interfaces__rosidl_typesupport_cpp.so" to ""
+-- Up-to-date: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/share/ch4_interfaces/environment/pythonpath.sh
+-- Installing: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/share/ch4_interfaces/environment/pythonpath.dsv
+-- Up-to-date: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/local/lib/python3.10/dist-packages/ch4_interfaces-0.0.0-py3.10.egg-info
+-- Installing: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/local/lib/python3.10/dist-packages/ch4_interfaces-0.0.0-py3.10.egg-info/top_level.txt
+-- Installing: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/local/lib/python3.10/dist-packages/ch4_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt
+-- Installing: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/local/lib/python3.10/dist-packages/ch4_interfaces-0.0.0-py3.10.egg-info/PKG-INFO
+-- Installing: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/local/lib/python3.10/dist-packages/ch4_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt
+-- Up-to-date: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/local/lib/python3.10/dist-packages/ch4_interfaces
+-- Installing: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/local/lib/python3.10/dist-packages/ch4_interfaces/ch4_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so
+-- Up-to-date: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/local/lib/python3.10/dist-packages/ch4_interfaces/srv
+-- Installing: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/local/lib/python3.10/dist-packages/ch4_interfaces/srv/_patrol.py
+-- Installing: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/local/lib/python3.10/dist-packages/ch4_interfaces/srv/_patrol_s.c
+-- Installing: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/local/lib/python3.10/dist-packages/ch4_interfaces/srv/_face_detector_s.c
+-- Installing: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/local/lib/python3.10/dist-packages/ch4_interfaces/srv/_face_detector.py
+-- Installing: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/local/lib/python3.10/dist-packages/ch4_interfaces/srv/__init__.py
+-- Installing: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/local/lib/python3.10/dist-packages/ch4_interfaces/libch4_interfaces__rosidl_generator_py.so
+-- Installing: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/local/lib/python3.10/dist-packages/ch4_interfaces/_ch4_interfaces_s.ep.rosidl_typesupport_c.c
+-- Installing: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/local/lib/python3.10/dist-packages/ch4_interfaces/_ch4_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+-- Installing: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/local/lib/python3.10/dist-packages/ch4_interfaces/_ch4_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+-- Installing: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/local/lib/python3.10/dist-packages/ch4_interfaces/ch4_interfaces_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+-- Installing: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/local/lib/python3.10/dist-packages/ch4_interfaces/ch4_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so
+-- Installing: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/local/lib/python3.10/dist-packages/ch4_interfaces/__init__.py
+Listing '/home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/local/lib/python3.10/dist-packages/ch4_interfaces'...
+Compiling '/home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/local/lib/python3.10/dist-packages/ch4_interfaces/__init__.py'...
+Listing '/home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/local/lib/python3.10/dist-packages/ch4_interfaces/srv'...
+Compiling '/home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/local/lib/python3.10/dist-packages/ch4_interfaces/srv/__init__.py'...
+Compiling '/home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/local/lib/python3.10/dist-packages/ch4_interfaces/srv/_face_detector.py'...
+Compiling '/home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/local/lib/python3.10/dist-packages/ch4_interfaces/srv/_patrol.py'...
+-- Installing: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/local/lib/python3.10/dist-packages/ch4_interfaces/ch4_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so
+-- Set runtime path of "/home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/local/lib/python3.10/dist-packages/ch4_interfaces/ch4_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so" to ""
+-- Installing: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/local/lib/python3.10/dist-packages/ch4_interfaces/ch4_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so
+-- Set runtime path of "/home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/local/lib/python3.10/dist-packages/ch4_interfaces/ch4_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so" to ""
+-- Installing: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/local/lib/python3.10/dist-packages/ch4_interfaces/ch4_interfaces_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+-- Set runtime path of "/home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/local/lib/python3.10/dist-packages/ch4_interfaces/ch4_interfaces_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so" to ""
+-- Installing: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/lib/libch4_interfaces__rosidl_generator_py.so
+-- Set runtime path of "/home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/lib/libch4_interfaces__rosidl_generator_py.so" to ""
+-- Up-to-date: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/share/ch4_interfaces/srv/FaceDetector.idl
+-- Installing: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/share/ch4_interfaces/srv/Patrol.idl
+-- Up-to-date: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/share/ch4_interfaces/srv/FaceDetector.srv
+-- Up-to-date: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/share/ch4_interfaces/srv/FaceDetector_Request.msg
+-- Up-to-date: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/share/ch4_interfaces/srv/FaceDetector_Response.msg
+-- Installing: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/share/ch4_interfaces/srv/Patrol.srv
+-- Installing: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/share/ch4_interfaces/srv/Patrol_Request.msg
+-- Installing: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/share/ch4_interfaces/srv/Patrol_Response.msg
+-- Up-to-date: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/share/ament_index/resource_index/package_run_dependencies/ch4_interfaces
+-- Installing: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/share/ament_index/resource_index/parent_prefix_path/ch4_interfaces
+-- Up-to-date: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/share/ch4_interfaces/environment/ament_prefix_path.sh
+-- Installing: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/share/ch4_interfaces/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/share/ch4_interfaces/environment/path.sh
+-- Installing: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/share/ch4_interfaces/environment/path.dsv
+-- Up-to-date: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/share/ch4_interfaces/local_setup.bash
+-- Up-to-date: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/share/ch4_interfaces/local_setup.sh
+-- Up-to-date: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/share/ch4_interfaces/local_setup.zsh
+-- Installing: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/share/ch4_interfaces/local_setup.dsv
+-- Installing: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/share/ch4_interfaces/package.dsv
+-- Up-to-date: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/share/ament_index/resource_index/packages/ch4_interfaces
+-- Up-to-date: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/share/ch4_interfaces/cmake/export_ch4_interfaces__rosidl_generator_cExport.cmake
+-- Up-to-date: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/share/ch4_interfaces/cmake/export_ch4_interfaces__rosidl_generator_cExport-noconfig.cmake
+-- Up-to-date: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/share/ch4_interfaces/cmake/export_ch4_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+-- Up-to-date: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/share/ch4_interfaces/cmake/export_ch4_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+-- Up-to-date: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/share/ch4_interfaces/cmake/export_ch4_interfaces__rosidl_generator_cppExport.cmake
+-- Up-to-date: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/share/ch4_interfaces/cmake/export_ch4_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+-- Up-to-date: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/share/ch4_interfaces/cmake/export_ch4_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+-- Up-to-date: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/share/ch4_interfaces/cmake/ch4_interfaces__rosidl_typesupport_introspection_cExport.cmake
+-- Up-to-date: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/share/ch4_interfaces/cmake/ch4_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+-- Up-to-date: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/share/ch4_interfaces/cmake/ch4_interfaces__rosidl_typesupport_cExport.cmake
+-- Up-to-date: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/share/ch4_interfaces/cmake/ch4_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+-- Up-to-date: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/share/ch4_interfaces/cmake/ch4_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+-- Up-to-date: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/share/ch4_interfaces/cmake/ch4_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+-- Up-to-date: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/share/ch4_interfaces/cmake/ch4_interfaces__rosidl_typesupport_cppExport.cmake
+-- Up-to-date: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/share/ch4_interfaces/cmake/ch4_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+-- Up-to-date: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/share/ch4_interfaces/cmake/export_ch4_interfaces__rosidl_generator_pyExport.cmake
+-- Up-to-date: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/share/ch4_interfaces/cmake/export_ch4_interfaces__rosidl_generator_pyExport-noconfig.cmake
+-- Installing: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/share/ch4_interfaces/cmake/rosidl_cmake-extras.cmake
+-- Up-to-date: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/share/ch4_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Up-to-date: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/share/ch4_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Up-to-date: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/share/ch4_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+-- Up-to-date: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/share/ch4_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+-- Up-to-date: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/share/ch4_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+-- Up-to-date: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/share/ch4_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+-- Up-to-date: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/share/ch4_interfaces/cmake/ch4_interfacesConfig.cmake
+-- Up-to-date: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/share/ch4_interfaces/cmake/ch4_interfacesConfig-version.cmake
+-- Up-to-date: /home/nayr/FishRos/ch4/ch4_ws/install/ch4_interfaces/share/ch4_interfaces/package.xml

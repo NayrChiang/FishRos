@@ -249,8 +249,13 @@ CMakeFiles/ch4_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_gener
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.h \
   /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string.h \
   /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h \
-  rosidl_generator_c/ch4_interfaces/srv/detail/face_detector__functions.h
+  rosidl_generator_c/ch4_interfaces/srv/detail/face_detector__functions.h \
+  rosidl_generator_c/ch4_interfaces/srv/detail/patrol__type_support.h \
+  rosidl_generator_c/ch4_interfaces/srv/detail/patrol__struct.h \
+  rosidl_generator_c/ch4_interfaces/srv/detail/patrol__functions.h
 
+
+rosidl_generator_c/ch4_interfaces/srv/detail/patrol__type_support.h:
 
 /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h:
 
@@ -548,6 +553,8 @@ rosidl_generator_py/ch4_interfaces/_ch4_interfaces_s.ep.rosidl_typesupport_fastr
 
 /usr/include/aarch64-linux-gnu/bits/uintn-identity.h:
 
+rosidl_generator_c/ch4_interfaces/srv/detail/patrol__functions.h:
+
 rosidl_generator_c/ch4_interfaces/srv/detail/face_detector__functions.h:
 
 /usr/include/aarch64-linux-gnu/asm/errno.h:
@@ -625,6 +632,8 @@ rosidl_generator_c/ch4_interfaces/srv/detail/face_detector__functions.h:
 /usr/include/aarch64-linux-gnu/bits/types/__sigset_t.h:
 
 /usr/include/aarch64-linux-gnu/asm/posix_types.h:
+
+rosidl_generator_c/ch4_interfaces/srv/detail/patrol__struct.h:
 
 /usr/include/aarch64-linux-gnu/bits/types/struct_timeval.h:
 

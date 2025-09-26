@@ -6,3 +6,4 @@ ch4_interfaces.egg-info/dependency_links.txt
 ch4_interfaces.egg-info/top_level.txt
 ch4_interfaces/srv/__init__.py
 ch4_interfaces/srv/_face_detector.py
+ch4_interfaces/srv/_patrol.py

@@ -69,6 +69,9 @@ include CMakeFiles/ch4_interfaces.dir/progress.make
 CMakeFiles/ch4_interfaces: /home/nayr/FishRos/ch4/ch4_ws/src/ch4_interfaces/srv/FaceDetector.srv
 CMakeFiles/ch4_interfaces: rosidl_cmake/srv/FaceDetector_Request.msg
 CMakeFiles/ch4_interfaces: rosidl_cmake/srv/FaceDetector_Response.msg
+CMakeFiles/ch4_interfaces: /home/nayr/FishRos/ch4/ch4_ws/src/ch4_interfaces/srv/Patrol.srv
+CMakeFiles/ch4_interfaces: rosidl_cmake/srv/Patrol_Request.msg
+CMakeFiles/ch4_interfaces: rosidl_cmake/srv/Patrol_Response.msg
 CMakeFiles/ch4_interfaces: /opt/ros/humble/share/sensor_msgs/msg/BatteryState.idl
 CMakeFiles/ch4_interfaces: /opt/ros/humble/share/sensor_msgs/msg/CameraInfo.idl
 CMakeFiles/ch4_interfaces: /opt/ros/humble/share/sensor_msgs/msg/ChannelFloat32.idl

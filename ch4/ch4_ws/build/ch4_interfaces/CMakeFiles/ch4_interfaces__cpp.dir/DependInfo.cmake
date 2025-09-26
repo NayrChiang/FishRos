@@ -16,6 +16,11 @@ set(CMAKE_MULTIPLE_OUTPUT_PAIRS
   "/home/nayr/FishRos/ch4/ch4_ws/build/ch4_interfaces/rosidl_generator_cpp/ch4_interfaces/srv/detail/face_detector__struct.hpp" "/home/nayr/FishRos/ch4/ch4_ws/build/ch4_interfaces/rosidl_generator_cpp/ch4_interfaces/srv/face_detector.hpp"
   "/home/nayr/FishRos/ch4/ch4_ws/build/ch4_interfaces/rosidl_generator_cpp/ch4_interfaces/srv/detail/face_detector__traits.hpp" "/home/nayr/FishRos/ch4/ch4_ws/build/ch4_interfaces/rosidl_generator_cpp/ch4_interfaces/srv/face_detector.hpp"
   "/home/nayr/FishRos/ch4/ch4_ws/build/ch4_interfaces/rosidl_generator_cpp/ch4_interfaces/srv/detail/face_detector__type_support.hpp" "/home/nayr/FishRos/ch4/ch4_ws/build/ch4_interfaces/rosidl_generator_cpp/ch4_interfaces/srv/face_detector.hpp"
+  "/home/nayr/FishRos/ch4/ch4_ws/build/ch4_interfaces/rosidl_generator_cpp/ch4_interfaces/srv/detail/patrol__builder.hpp" "/home/nayr/FishRos/ch4/ch4_ws/build/ch4_interfaces/rosidl_generator_cpp/ch4_interfaces/srv/face_detector.hpp"
+  "/home/nayr/FishRos/ch4/ch4_ws/build/ch4_interfaces/rosidl_generator_cpp/ch4_interfaces/srv/detail/patrol__struct.hpp" "/home/nayr/FishRos/ch4/ch4_ws/build/ch4_interfaces/rosidl_generator_cpp/ch4_interfaces/srv/face_detector.hpp"
+  "/home/nayr/FishRos/ch4/ch4_ws/build/ch4_interfaces/rosidl_generator_cpp/ch4_interfaces/srv/detail/patrol__traits.hpp" "/home/nayr/FishRos/ch4/ch4_ws/build/ch4_interfaces/rosidl_generator_cpp/ch4_interfaces/srv/face_detector.hpp"
+  "/home/nayr/FishRos/ch4/ch4_ws/build/ch4_interfaces/rosidl_generator_cpp/ch4_interfaces/srv/detail/patrol__type_support.hpp" "/home/nayr/FishRos/ch4/ch4_ws/build/ch4_interfaces/rosidl_generator_cpp/ch4_interfaces/srv/face_detector.hpp"
+  "/home/nayr/FishRos/ch4/ch4_ws/build/ch4_interfaces/rosidl_generator_cpp/ch4_interfaces/srv/patrol.hpp" "/home/nayr/FishRos/ch4/ch4_ws/build/ch4_interfaces/rosidl_generator_cpp/ch4_interfaces/srv/face_detector.hpp"
   )
 
 

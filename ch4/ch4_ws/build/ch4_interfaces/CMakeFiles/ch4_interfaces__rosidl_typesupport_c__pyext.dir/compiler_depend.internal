@@ -251,4 +251,7 @@ CMakeFiles/ch4_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/c
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string.h
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h
  /home/nayr/FishRos/ch4/ch4_ws/build/ch4_interfaces/rosidl_generator_c/ch4_interfaces/srv/detail/face_detector__functions.h
+ /home/nayr/FishRos/ch4/ch4_ws/build/ch4_interfaces/rosidl_generator_c/ch4_interfaces/srv/detail/patrol__type_support.h
+ /home/nayr/FishRos/ch4/ch4_ws/build/ch4_interfaces/rosidl_generator_c/ch4_interfaces/srv/detail/patrol__struct.h
+ /home/nayr/FishRos/ch4/ch4_ws/build/ch4_interfaces/rosidl_generator_c/ch4_interfaces/srv/detail/patrol__functions.h
 

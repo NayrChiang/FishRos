@@ -78,6 +78,7 @@ rosidl_typesupport_introspection_c/ch4_interfaces/srv/detail/face_detector__rosi
 rosidl_typesupport_introspection_c/ch4_interfaces/srv/detail/face_detector__rosidl_typesupport_introspection_c.h: /opt/ros/humble/share/rosidl_typesupport_introspection_c/resource/srv__rosidl_typesupport_introspection_c.h.em
 rosidl_typesupport_introspection_c/ch4_interfaces/srv/detail/face_detector__rosidl_typesupport_introspection_c.h: /opt/ros/humble/share/rosidl_typesupport_introspection_c/resource/srv__type_support.c.em
 rosidl_typesupport_introspection_c/ch4_interfaces/srv/detail/face_detector__rosidl_typesupport_introspection_c.h: rosidl_adapter/ch4_interfaces/srv/FaceDetector.idl
+rosidl_typesupport_introspection_c/ch4_interfaces/srv/detail/face_detector__rosidl_typesupport_introspection_c.h: rosidl_adapter/ch4_interfaces/srv/Patrol.idl
 rosidl_typesupport_introspection_c/ch4_interfaces/srv/detail/face_detector__rosidl_typesupport_introspection_c.h: /opt/ros/humble/share/sensor_msgs/msg/BatteryState.idl
 rosidl_typesupport_introspection_c/ch4_interfaces/srv/detail/face_detector__rosidl_typesupport_introspection_c.h: /opt/ros/humble/share/sensor_msgs/msg/CameraInfo.idl
 rosidl_typesupport_introspection_c/ch4_interfaces/srv/detail/face_detector__rosidl_typesupport_introspection_c.h: /opt/ros/humble/share/sensor_msgs/msg/ChannelFloat32.idl
@@ -173,8 +174,14 @@ rosidl_typesupport_introspection_c/ch4_interfaces/srv/detail/face_detector__rosi
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/nayr/FishRos/ch4/ch4_ws/build/ch4_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C introspection for ROS interfaces"
 	/usr/bin/python3 /opt/ros/humble/lib/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c --generator-arguments-file /home/nayr/FishRos/ch4/ch4_ws/build/ch4_interfaces/rosidl_typesupport_introspection_c__arguments.json
 
+rosidl_typesupport_introspection_c/ch4_interfaces/srv/detail/patrol__rosidl_typesupport_introspection_c.h: rosidl_typesupport_introspection_c/ch4_interfaces/srv/detail/face_detector__rosidl_typesupport_introspection_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/ch4_interfaces/srv/detail/patrol__rosidl_typesupport_introspection_c.h
+
 rosidl_typesupport_introspection_c/ch4_interfaces/srv/detail/face_detector__type_support.c: rosidl_typesupport_introspection_c/ch4_interfaces/srv/detail/face_detector__rosidl_typesupport_introspection_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/ch4_interfaces/srv/detail/face_detector__type_support.c
+
+rosidl_typesupport_introspection_c/ch4_interfaces/srv/detail/patrol__type_support.c: rosidl_typesupport_introspection_c/ch4_interfaces/srv/detail/face_detector__rosidl_typesupport_introspection_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/ch4_interfaces/srv/detail/patrol__type_support.c
 
 CMakeFiles/ch4_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ch4_interfaces/srv/detail/face_detector__type_support.c.o: CMakeFiles/ch4_interfaces__rosidl_typesupport_introspection_c.dir/flags.make
 CMakeFiles/ch4_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ch4_interfaces/srv/detail/face_detector__type_support.c.o: rosidl_typesupport_introspection_c/ch4_interfaces/srv/detail/face_detector__type_support.c
@@ -190,14 +197,30 @@ CMakeFiles/ch4_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesup
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ch4_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ch4_interfaces/srv/detail/face_detector__type_support.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nayr/FishRos/ch4/ch4_ws/build/ch4_interfaces/rosidl_typesupport_introspection_c/ch4_interfaces/srv/detail/face_detector__type_support.c -o CMakeFiles/ch4_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ch4_interfaces/srv/detail/face_detector__type_support.c.s
 
+CMakeFiles/ch4_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ch4_interfaces/srv/detail/patrol__type_support.c.o: CMakeFiles/ch4_interfaces__rosidl_typesupport_introspection_c.dir/flags.make
+CMakeFiles/ch4_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ch4_interfaces/srv/detail/patrol__type_support.c.o: rosidl_typesupport_introspection_c/ch4_interfaces/srv/detail/patrol__type_support.c
+CMakeFiles/ch4_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ch4_interfaces/srv/detail/patrol__type_support.c.o: CMakeFiles/ch4_interfaces__rosidl_typesupport_introspection_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nayr/FishRos/ch4/ch4_ws/build/ch4_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/ch4_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ch4_interfaces/srv/detail/patrol__type_support.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ch4_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ch4_interfaces/srv/detail/patrol__type_support.c.o -MF CMakeFiles/ch4_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ch4_interfaces/srv/detail/patrol__type_support.c.o.d -o CMakeFiles/ch4_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ch4_interfaces/srv/detail/patrol__type_support.c.o -c /home/nayr/FishRos/ch4/ch4_ws/build/ch4_interfaces/rosidl_typesupport_introspection_c/ch4_interfaces/srv/detail/patrol__type_support.c
+
+CMakeFiles/ch4_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ch4_interfaces/srv/detail/patrol__type_support.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ch4_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ch4_interfaces/srv/detail/patrol__type_support.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nayr/FishRos/ch4/ch4_ws/build/ch4_interfaces/rosidl_typesupport_introspection_c/ch4_interfaces/srv/detail/patrol__type_support.c > CMakeFiles/ch4_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ch4_interfaces/srv/detail/patrol__type_support.c.i
+
+CMakeFiles/ch4_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ch4_interfaces/srv/detail/patrol__type_support.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ch4_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ch4_interfaces/srv/detail/patrol__type_support.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nayr/FishRos/ch4/ch4_ws/build/ch4_interfaces/rosidl_typesupport_introspection_c/ch4_interfaces/srv/detail/patrol__type_support.c -o CMakeFiles/ch4_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ch4_interfaces/srv/detail/patrol__type_support.c.s
+
 # Object files for target ch4_interfaces__rosidl_typesupport_introspection_c
 ch4_interfaces__rosidl_typesupport_introspection_c_OBJECTS = \
-"CMakeFiles/ch4_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ch4_interfaces/srv/detail/face_detector__type_support.c.o"
+"CMakeFiles/ch4_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ch4_interfaces/srv/detail/face_detector__type_support.c.o" \
+"CMakeFiles/ch4_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ch4_interfaces/srv/detail/patrol__type_support.c.o"
 
 # External object files for target ch4_interfaces__rosidl_typesupport_introspection_c
 ch4_interfaces__rosidl_typesupport_introspection_c_EXTERNAL_OBJECTS =
 
 libch4_interfaces__rosidl_typesupport_introspection_c.so: CMakeFiles/ch4_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ch4_interfaces/srv/detail/face_detector__type_support.c.o
+libch4_interfaces__rosidl_typesupport_introspection_c.so: CMakeFiles/ch4_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ch4_interfaces/srv/detail/patrol__type_support.c.o
 libch4_interfaces__rosidl_typesupport_introspection_c.so: CMakeFiles/ch4_interfaces__rosidl_typesupport_introspection_c.dir/build.make
 libch4_interfaces__rosidl_typesupport_introspection_c.so: libch4_interfaces__rosidl_generator_c.so
 libch4_interfaces__rosidl_typesupport_introspection_c.so: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_introspection_c.so
@@ -212,7 +235,7 @@ libch4_interfaces__rosidl_typesupport_introspection_c.so: /opt/ros/humble/lib/li
 libch4_interfaces__rosidl_typesupport_introspection_c.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 libch4_interfaces__rosidl_typesupport_introspection_c.so: /opt/ros/humble/lib/librcutils.so
 libch4_interfaces__rosidl_typesupport_introspection_c.so: CMakeFiles/ch4_interfaces__rosidl_typesupport_introspection_c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/nayr/FishRos/ch4/ch4_ws/build/ch4_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C shared library libch4_interfaces__rosidl_typesupport_introspection_c.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/nayr/FishRos/ch4/ch4_ws/build/ch4_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C shared library libch4_interfaces__rosidl_typesupport_introspection_c.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ch4_interfaces__rosidl_typesupport_introspection_c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -225,6 +248,8 @@ CMakeFiles/ch4_interfaces__rosidl_typesupport_introspection_c.dir/clean:
 
 CMakeFiles/ch4_interfaces__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/ch4_interfaces/srv/detail/face_detector__rosidl_typesupport_introspection_c.h
 CMakeFiles/ch4_interfaces__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/ch4_interfaces/srv/detail/face_detector__type_support.c
+CMakeFiles/ch4_interfaces__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/ch4_interfaces/srv/detail/patrol__rosidl_typesupport_introspection_c.h
+CMakeFiles/ch4_interfaces__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/ch4_interfaces/srv/detail/patrol__type_support.c
 	cd /home/nayr/FishRos/ch4/ch4_ws/build/ch4_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nayr/FishRos/ch4/ch4_ws/src/ch4_interfaces /home/nayr/FishRos/ch4/ch4_ws/src/ch4_interfaces /home/nayr/FishRos/ch4/ch4_ws/build/ch4_interfaces /home/nayr/FishRos/ch4/ch4_ws/build/ch4_interfaces /home/nayr/FishRos/ch4/ch4_ws/build/ch4_interfaces/CMakeFiles/ch4_interfaces__rosidl_typesupport_introspection_c.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ch4_interfaces__rosidl_typesupport_introspection_c.dir/depend
 

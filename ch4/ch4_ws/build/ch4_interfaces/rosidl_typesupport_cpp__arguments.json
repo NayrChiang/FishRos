@@ -3,7 +3,8 @@
   "output_dir": "/home/nayr/FishRos/ch4/ch4_ws/build/ch4_interfaces/rosidl_typesupport_cpp/ch4_interfaces",
   "template_dir": "/opt/ros/humble/share/rosidl_typesupport_cpp/resource",
   "idl_tuples": [
-    "/home/nayr/FishRos/ch4/ch4_ws/build/ch4_interfaces/rosidl_adapter/ch4_interfaces:srv/FaceDetector.idl"
+    "/home/nayr/FishRos/ch4/ch4_ws/build/ch4_interfaces/rosidl_adapter/ch4_interfaces:srv/FaceDetector.idl",
+    "/home/nayr/FishRos/ch4/ch4_ws/build/ch4_interfaces/rosidl_adapter/ch4_interfaces:srv/Patrol.idl"
   ],
   "ros_interface_dependencies": [
     "sensor_msgs:/opt/ros/humble/share/sensor_msgs/msg/BatteryState.idl",
@@ -107,6 +108,7 @@
     "/opt/ros/humble/share/rosidl_typesupport_cpp/resource/msg__type_support.cpp.em",
     "/opt/ros/humble/share/rosidl_typesupport_cpp/resource/srv__type_support.cpp.em",
     "/home/nayr/FishRos/ch4/ch4_ws/build/ch4_interfaces/rosidl_adapter/ch4_interfaces/srv/FaceDetector.idl",
+    "/home/nayr/FishRos/ch4/ch4_ws/build/ch4_interfaces/rosidl_adapter/ch4_interfaces/srv/Patrol.idl",
     "/opt/ros/humble/share/sensor_msgs/msg/BatteryState.idl",
     "/opt/ros/humble/share/sensor_msgs/msg/CameraInfo.idl",
     "/opt/ros/humble/share/sensor_msgs/msg/ChannelFloat32.idl",
