@@ -1,0 +1,68 @@
+[0.005s] Invoking command in '/home/nayr/FishRos/ch4/ch4_ws/build/demo_cpp_service': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nayr/FishRos/ch4/ch4_ws/install/demo_python_service:/opt/ros/humble /usr/bin/cmake --build /home/nayr/FishRos/ch4/ch4_ws/build/demo_cpp_service -- -j4 -l4
+[0.037s] [35m[1mConsolidate compiler generated dependencies of target turtle_control[0m
+[0.046s] [ 25%] [32mBuilding CXX object CMakeFiles/turtle_control.dir/src/turtle_control.cpp.o[0m
+[0.051s] [ 75%] Built target patrol_client
+[1.048s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[1.048s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[1.048s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[1.048s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[1.048s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[1.048s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[1.048s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[1.048s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[1.048s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[1.049s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[1.049s]                  from [01m[K/home/nayr/FishRos/ch4/ch4_ws/src/demo_cpp_service/src/turtle_control.cpp:1[m[K:
+[1.049s] [01m[K/home/nayr/FishRos/ch4/ch4_ws/src/demo_cpp_service/src/turtle_control.cpp:[m[K In lambda function:
+[1.049s] [01m[K/home/nayr/FishRos/ch4/ch4_ws/src/demo_cpp_service/src/turtle_control.cpp:38:17:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static member function ‘[01m[Krclcpp::Logger rclcpp::Node::get_logger() const[m[K’
+[1.049s]    38 |                 [01;31m[KRCLCPP_INFO[m[K(this->get_logger, "Update Parameter value, %s = %f", parameter.get_name().c_str(), parameter.as_double());
+[1.049s]       |                 [01;31m[K^~~~~~~~~~~[m[K
+[1.049s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[1.049s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[1.049s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[1.049s]                  from [01m[K/home/nayr/FishRos/ch4/ch4_ws/src/demo_cpp_service/src/turtle_control.cpp:1[m[K:
+[1.049s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:142:3:[m[K [01;36m[Knote: [m[Kdeclared here
+[1.049s]   142 |   [01;36m[Kget_logger[m[K() const;
+[1.049s]       |   [01;36m[K^~~~~~~~~~[m[K
+[1.049s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[1.049s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[1.049s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[1.049s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[1.049s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[1.049s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[1.049s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[1.049s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[1.049s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[1.049s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[1.049s]                  from [01m[K/home/nayr/FishRos/ch4/ch4_ws/src/demo_cpp_service/src/turtle_control.cpp:1[m[K:
+[1.049s] [01m[K/home/nayr/FishRos/ch4/ch4_ws/src/demo_cpp_service/src/turtle_control.cpp:38:17:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[1.049s]    38 |                 [01;31m[KRCLCPP_INFO[m[K(this->get_logger, "Update Parameter value, %s = %f", parameter.get_name().c_str(), parameter.as_double());
+[1.049s]       |                 [01;31m[K^~~~~~~~~~~[m[K
+[1.049s] [01m[K/home/nayr/FishRos/ch4/ch4_ws/src/demo_cpp_service/src/turtle_control.cpp:38:17:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[1.049s]    38 |                 [01;31m[KRCLCPP_INFO[m[K(this->get_logger, "Update Parameter value, %s = %f", parameter.get_name().c_str(), parameter.as_double());
+[1.049s]       |                 [01;31m[K^~~~~~~~~~~[m[K
+[1.049s] [01m[K/home/nayr/FishRos/ch4/ch4_ws/src/demo_cpp_service/src/turtle_control.cpp:38:17:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[1.049s]    38 |                 [01;31m[KRCLCPP_INFO[m[K(this->get_logger, "Update Parameter value, %s = %f", parameter.get_name().c_str(), parameter.as_double());
+[1.049s]       |                 [01;31m[K^~~~~~~~~~~[m[K
+[1.049s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[1.049s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[1.049s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[1.049s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[1.049s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[1.049s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[1.049s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[1.049s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[1.049s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[1.049s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[1.049s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[1.049s]                  from [01m[K/home/nayr/FishRos/ch4/ch4_ws/src/demo_cpp_service/src/turtle_control.cpp:1[m[K:
+[1.049s] [01m[K/home/nayr/FishRos/ch4/ch4_ws/src/demo_cpp_service/src/turtle_control.cpp:38:35:[m[K [01;31m[Kerror: [m[Kinvalid use of member function ‘[01m[Krclcpp::Logger rclcpp::Node::get_logger() const[m[K’ (did you forget the ‘[01m[K()[m[K’ ?)
+[1.049s]    38 |                 RCLCPP_INFO(this->[01;31m[Kg[m[Ket_logger, "Update Parameter value, %s = %f", parameter.get_name().c_str(), parameter.as_double());
+[1.049s]       |                                   [01;31m[K^[m[K
+[1.049s] [01m[K/home/nayr/FishRos/ch4/ch4_ws/src/demo_cpp_service/src/turtle_control.cpp:38:35:[m[K [01;31m[Kerror: [m[Kinvalid use of member function ‘[01m[Krclcpp::Logger rclcpp::Node::get_logger() const[m[K’ (did you forget the ‘[01m[K()[m[K’ ?)
+[1.049s]    38 |                 RCLCPP_INFO(this->[01;31m[Kg[m[Ket_logger, "Update Parameter value, %s = %f", parameter.get_name().c_str(), parameter.as_double());
+[1.049s]       |                                   [01;31m[K^[m[K
+[2.124s] gmake[2]: *** [CMakeFiles/turtle_control.dir/build.make:76: CMakeFiles/turtle_control.dir/src/turtle_control.cpp.o] Error 1
+[2.124s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/turtle_control.dir/all] Error 2
+[2.124s] gmake: *** [Makefile:146: all] Error 2
+[2.126s] Invoked command in '/home/nayr/FishRos/ch4/ch4_ws/build/demo_cpp_service' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nayr/FishRos/ch4/ch4_ws/install/demo_python_service:/opt/ros/humble /usr/bin/cmake --build /home/nayr/FishRos/ch4/ch4_ws/build/demo_cpp_service -- -j4 -l4

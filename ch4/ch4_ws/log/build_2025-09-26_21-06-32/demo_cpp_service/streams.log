@@ -1,0 +1,22 @@
+[0.006s] Invoking command in '/home/nayr/FishRos/ch4/ch4_ws/build/demo_cpp_service': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nayr/FishRos/ch4/ch4_ws/install/demo_python_service:/opt/ros/humble /usr/bin/cmake --build /home/nayr/FishRos/ch4/ch4_ws/build/demo_cpp_service -- -j4 -l4
+[0.033s] [ 50%] [32mBuilding CXX object CMakeFiles/turtle_control.dir/src/turtle_control.cpp.o[0m
+[0.033s] [ 75%] Built target patrol_client
+[1.157s] [01m[K/home/nayr/FishRos/ch4/ch4_ws/src/demo_cpp_service/src/turtle_control.cpp:[m[K In constructor ‘[01m[KTurtleControlNode::TurtleControlNode(const string&)[m[K’:
+[1.157s] [01m[K/home/nayr/FishRos/ch4/ch4_ws/src/demo_cpp_service/src/turtle_control.cpp:26:34:[m[K [01;31m[Kerror: [m[K‘[01m[Kk_[m[K’ was not declared in this scope
+[1.158s]    26 |         this->get_parameter("k", [01;31m[Kk_[m[K);
+[1.158s]       |                                  [01;31m[K^~[m[K
+[1.161s] [01m[K/home/nayr/FishRos/ch4/ch4_ws/src/demo_cpp_service/src/turtle_control.cpp:27:42:[m[K [01;31m[Kerror: [m[K‘[01m[Kmax_speed_[m[K’ was not declared in this scope
+[1.161s]    27 |     this->get_parameter("max_speed", [01;31m[Kmax_speed_[m[K);
+[1.161s]       |                                      [01;31m[K^~~~~~~~~~[m[K
+[1.161s] 
+[1.170s] [01m[K/home/nayr/FishRos/ch4/ch4_ws/src/demo_cpp_service/src/turtle_control.cpp:[m[K In member function ‘[01m[Kvoid TurtleControlNode::on_pose_received_(turtlesim::msg::Pose_<std::allocator<void> >::SharedPtr)[m[K’:
+[1.170s] [01m[K/home/nayr/FishRos/ch4/ch4_ws/src/demo_cpp_service/src/turtle_control.cpp:66:32:[m[K [01;31m[Kerror: [m[K‘[01m[Kk_[m[K’ was not declared in this scope
+[1.170s]    66 |                 msg.linear.x = [01;31m[Kk_[m[K * dist;
+[1.170s]       |                                [01;31m[K^~[m[K
+[1.174s] [01m[K/home/nayr/FishRos/ch4/ch4_ws/src/demo_cpp_service/src/turtle_control.cpp:70:28:[m[K [01;31m[Kerror: [m[K‘[01m[Kmax_speed_[m[K’ was not declared in this scope
+[1.174s]    70 |         if (msg.linear.x > [01;31m[Kmax_speed_[m[K)
+[1.174s]       |                            [01;31m[K^~~~~~~~~~[m[K
+[2.202s] gmake[2]: *** [CMakeFiles/turtle_control.dir/build.make:76: CMakeFiles/turtle_control.dir/src/turtle_control.cpp.o] Error 1
+[2.202s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/turtle_control.dir/all] Error 2
+[2.203s] gmake: *** [Makefile:146: all] Error 2
+[2.204s] Invoked command in '/home/nayr/FishRos/ch4/ch4_ws/build/demo_cpp_service' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nayr/FishRos/ch4/ch4_ws/install/demo_python_service:/opt/ros/humble /usr/bin/cmake --build /home/nayr/FishRos/ch4/ch4_ws/build/demo_cpp_service -- -j4 -l4

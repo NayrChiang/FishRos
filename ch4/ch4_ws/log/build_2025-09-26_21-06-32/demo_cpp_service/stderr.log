@@ -1,0 +1,18 @@
+[01m[K/home/nayr/FishRos/ch4/ch4_ws/src/demo_cpp_service/src/turtle_control.cpp:[m[K In constructor ‘[01m[KTurtleControlNode::TurtleControlNode(const string&)[m[K’:
+[01m[K/home/nayr/FishRos/ch4/ch4_ws/src/demo_cpp_service/src/turtle_control.cpp:26:34:[m[K [01;31m[Kerror: [m[K‘[01m[Kk_[m[K’ was not declared in this scope
+   26 |         this->get_parameter("k", [01;31m[Kk_[m[K);
+      |                                  [01;31m[K^~[m[K
+[01m[K/home/nayr/FishRos/ch4/ch4_ws/src/demo_cpp_service/src/turtle_control.cpp:27:42:[m[K [01;31m[Kerror: [m[K‘[01m[Kmax_speed_[m[K’ was not declared in this scope
+   27 |     this->get_parameter("max_speed", [01;31m[Kmax_speed_[m[K);
+      |                                      [01;31m[K^~~~~~~~~~[m[K
+
+[01m[K/home/nayr/FishRos/ch4/ch4_ws/src/demo_cpp_service/src/turtle_control.cpp:[m[K In member function ‘[01m[Kvoid TurtleControlNode::on_pose_received_(turtlesim::msg::Pose_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/nayr/FishRos/ch4/ch4_ws/src/demo_cpp_service/src/turtle_control.cpp:66:32:[m[K [01;31m[Kerror: [m[K‘[01m[Kk_[m[K’ was not declared in this scope
+   66 |                 msg.linear.x = [01;31m[Kk_[m[K * dist;
+      |                                [01;31m[K^~[m[K
+[01m[K/home/nayr/FishRos/ch4/ch4_ws/src/demo_cpp_service/src/turtle_control.cpp:70:28:[m[K [01;31m[Kerror: [m[K‘[01m[Kmax_speed_[m[K’ was not declared in this scope
+   70 |         if (msg.linear.x > [01;31m[Kmax_speed_[m[K)
+      |                            [01;31m[K^~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/turtle_control.dir/build.make:76: CMakeFiles/turtle_control.dir/src/turtle_control.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/turtle_control.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

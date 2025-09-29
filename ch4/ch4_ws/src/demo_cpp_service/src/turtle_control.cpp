@@ -3,13 +3,16 @@
 #include "turtlesim/msg/pose.hpp"
 #include <chrono>
 #include "ch4_interfaces/srv/patrol.hpp"
+#include "rcl_interfaces/msg/set_parameters_result.hpp"
 
 using Patrol = ch4_interfaces::srv::Patrol;
+using msg = rcl_interfaces::msg::SetParametersResult;
 using namespace std::chrono_literals;
 
 class TurtleControlNode : public rclcpp::Node
 {
 private:
+    OnSetParametersCallbackHandle::SharedPtr parameter_callback_handle_;
     rclcpp::Service<Patrol>::SharedPtr patrol_service_;
     rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr publisher_;
     rclcpp::Subscription<turtlesim::msg::Pose>::SharedPtr subscriber_;
@@ -21,18 +24,45 @@ private:
 public:
     explicit TurtleControlNode(const std::string &node_name) : Node(node_name)
     {
+        this->declare_parameter("k", 1.0);
+        this->declare_parameter("max_speed", 1.0);
+        this->get_parameter("k", k_);
+        this->get_parameter("max_speed", max_speed_);
+        this->set_parameter(rclcpp::Parameter("k", 2.0));
+
+        parameter_callback_handle_ = this->add_on_set_parameters_callback([&](const std::vector<rclcpp::Parameter> &parameters) -> rcl_interfaces::msg::SetParametersResult
+                                                                          {
+            rcl_interfaces::msg::SetParametersResult result;
+            result.successful = true;
+            for (const auto &parameter : parameters)
+            {
+                RCLCPP_INFO(this->get_logger(), "Update Parameter value, %s = %f", parameter.get_name().c_str(), parameter.as_double());
+                if (parameter.get_name()=="k")
+                {
+                    k_ = parameter.as_double();
+                }
+                if (parameter.get_name()=="max_speed")
+                {
+                    max_speed_ = parameter.as_double();
+                }
+            }
+            return result; });
+
         patrol_service_ = this->create_service<Patrol>("patrol", [&](const Patrol::Request::SharedPtr request, Patrol::Response::SharedPtr response) -> void
                                                        {
-            if(
-                (0<request->target_x&&request->target_x<12.0f)&&
-                (0<request->target_y&&request->target_y<12.0f)
-            ){
-                this->target_x_ = request->target_x;
-                this->target_y_ = request->target_y;
-                response->result = Patrol::Response::SUCCESS;
-            }else{
-                response->result = Patrol::Response::FAIL;
-            } });
+            
+        if (
+            (0 < request->target_x && request->target_x < 12.0f) &&
+            (0 < request->target_y && request->target_y < 12.0f))
+        {
+            this->target_x_ = request->target_x;
+            this->target_y_ = request->target_y;
+            response->result = Patrol::Response::SUCCESS;
+        }
+        else
+        {
+            response->result = Patrol::Response::FAIL;
+        } });
         publisher_ = this->create_publisher<geometry_msgs::msg::Twist>("/turtle1/cmd_vel", 10);
         subscriber_ = this->create_subscription<turtlesim::msg::Pose>("/turtle1/pose", 10,
                                                                       std::bind(&TurtleControlNode::on_pose_received_, this, std::placeholders::_1));
