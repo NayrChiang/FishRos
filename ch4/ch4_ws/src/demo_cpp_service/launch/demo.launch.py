@@ -2,9 +2,13 @@ import launch
 import launch_ros
 
 def generate_launch_description():
+    # Declare a launch parameter to pass parameters into nodes when using launch
+    action_declare_arg_background_g = launch.actions.DeclareLaunchArgument('launch_arg_bg_g', default_value = "150")
+    
     action_node_turtlesim_node = launch_ros.actions.Node(
         package = 'turtlesim',
         executable = 'turtlesim_node',
+        parameters = [{'background_g': launch.substitutions.LaunchConfiguration('launch_arg_bg_g', default = "150")}],
         output = 'screen'
     )
     
@@ -21,6 +25,7 @@ def generate_launch_description():
     )
     
     return launch.LaunchDescription([
+        action_declare_arg_background_g,
         action_node_turtlesim_node,
         action_node_patrol_client,
         action_node_turtle_control
