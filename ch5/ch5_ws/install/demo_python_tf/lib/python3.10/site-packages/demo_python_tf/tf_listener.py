@@ -1,4 +1,4 @@
-# Ch 5.2.2
+# Ch 5.2.3
 import rclpy
 from rclpy.node import Node
 from tf2_ros import TransformListener, Buffer
