@@ -1,0 +1,29 @@
+[0.283s] Invoking command in '/home/nayr/FishRos/ch5/ch5_ws/src/demo_python_tf': PYTHONPATH=/home/nayr/FishRos/ch5/build/demo_python_tf/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nayr/FishRos/ch5/install/demo_python_tf/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/demo_python_tf build --build-base /home/nayr/FishRos/ch5/build/demo_python_tf/build install --record /home/nayr/FishRos/ch5/build/demo_python_tf/install.log --single-version-externally-managed install_data
+[0.375s] running egg_info
+[0.375s] writing ../../../build/demo_python_tf/demo_python_tf.egg-info/PKG-INFO
+[0.376s] writing dependency_links to ../../../build/demo_python_tf/demo_python_tf.egg-info/dependency_links.txt
+[0.376s] writing entry points to ../../../build/demo_python_tf/demo_python_tf.egg-info/entry_points.txt
+[0.376s] writing requirements to ../../../build/demo_python_tf/demo_python_tf.egg-info/requires.txt
+[0.376s] writing top-level names to ../../../build/demo_python_tf/demo_python_tf.egg-info/top_level.txt
+[0.377s] reading manifest file '../../../build/demo_python_tf/demo_python_tf.egg-info/SOURCES.txt'
+[0.377s] adding license file 'LICENSE'
+[0.378s] writing manifest file '../../../build/demo_python_tf/demo_python_tf.egg-info/SOURCES.txt'
+[0.378s] running build
+[0.378s] running build_py
+[0.378s] copying demo_python_tf/static_tf_broadcaster.py -> /home/nayr/FishRos/ch5/build/demo_python_tf/build/lib/demo_python_tf
+[0.378s] copying demo_python_tf/dynamic_tf_broadcaster.py -> /home/nayr/FishRos/ch5/build/demo_python_tf/build/lib/demo_python_tf
+[0.378s] running install
+[0.378s] running install_lib
+[0.378s] copying /home/nayr/FishRos/ch5/build/demo_python_tf/build/lib/demo_python_tf/static_tf_broadcaster.py -> /home/nayr/FishRos/ch5/install/demo_python_tf/lib/python3.10/site-packages/demo_python_tf
+[0.378s] copying /home/nayr/FishRos/ch5/build/demo_python_tf/build/lib/demo_python_tf/dynamic_tf_broadcaster.py -> /home/nayr/FishRos/ch5/install/demo_python_tf/lib/python3.10/site-packages/demo_python_tf
+[0.379s] byte-compiling /home/nayr/FishRos/ch5/install/demo_python_tf/lib/python3.10/site-packages/demo_python_tf/static_tf_broadcaster.py to static_tf_broadcaster.cpython-310.pyc
+[0.379s] byte-compiling /home/nayr/FishRos/ch5/install/demo_python_tf/lib/python3.10/site-packages/demo_python_tf/dynamic_tf_broadcaster.py to dynamic_tf_broadcaster.cpython-310.pyc
+[0.379s] running install_data
+[0.379s] running install_egg_info
+[0.380s] removing '/home/nayr/FishRos/ch5/install/demo_python_tf/lib/python3.10/site-packages/demo_python_tf-0.0.0-py3.10.egg-info' (and everything under it)
+[0.380s] Copying ../../../build/demo_python_tf/demo_python_tf.egg-info to /home/nayr/FishRos/ch5/install/demo_python_tf/lib/python3.10/site-packages/demo_python_tf-0.0.0-py3.10.egg-info
+[0.380s] running install_scripts
+[0.388s] Installing static_tf_broadcaster script to /home/nayr/FishRos/ch5/install/demo_python_tf/lib/demo_python_tf
+[0.388s] Installing tf_broadcaster script to /home/nayr/FishRos/ch5/install/demo_python_tf/lib/demo_python_tf
+[0.388s] writing list of installed files to '/home/nayr/FishRos/ch5/build/demo_python_tf/install.log'
+[0.399s] Invoked command in '/home/nayr/FishRos/ch5/ch5_ws/src/demo_python_tf' returned '0': PYTHONPATH=/home/nayr/FishRos/ch5/build/demo_python_tf/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nayr/FishRos/ch5/install/demo_python_tf/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/demo_python_tf build --build-base /home/nayr/FishRos/ch5/build/demo_python_tf/build install --record /home/nayr/FishRos/ch5/build/demo_python_tf/install.log --single-version-externally-managed install_data
