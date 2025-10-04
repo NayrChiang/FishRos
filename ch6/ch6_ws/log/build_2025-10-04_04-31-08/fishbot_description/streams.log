@@ -1,0 +1,26 @@
+[0.004s] Invoking command in '/home/nayr/FishRos/ch6/ch6_ws/build/fishbot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/nayr/FishRos/ch6/ch6_ws/build/fishbot_description -- -j4 -l4
+[0.015s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.072s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.100s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.100s] -- Added test 'lint_cmake' to check CMake code style
+[0.100s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.101s] -- Added test 'xmllint' to check XML markup files
+[0.101s] -- Configuring done
+[0.103s] -- Generating done
+[0.104s] -- Build files have been written to: /home/nayr/FishRos/ch6/ch6_ws/build/fishbot_description
+[0.114s] Invoked command in '/home/nayr/FishRos/ch6/ch6_ws/build/fishbot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/nayr/FishRos/ch6/ch6_ws/build/fishbot_description -- -j4 -l4
+[0.118s] Invoking command in '/home/nayr/FishRos/ch6/ch6_ws/build/fishbot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/nayr/FishRos/ch6/ch6_ws/build/fishbot_description
+[0.121s] -- Install configuration: ""
+[0.121s] -- Up-to-date: /home/nayr/FishRos/ch6/ch6_ws/install/fishbot_description/share/fishbot_description/launch
+[0.121s] [31mCMake Error at cmake_install.cmake:46 (file):
+[0.121s]   file INSTALL cannot find
+[0.122s]   "/home/nayr/FishRos/ch6/ch6_ws/src/fishbot_description/rivz": No such file
+[0.122s]   or directory.
+[0.122s] 
+[0.122s] [0m
+[0.122s] -- Up-to-date: /home/nayr/FishRos/ch6/ch6_ws/install/fishbot_description/share/fishbot_description/launch/display_robot.launch.py
+[0.122s] -- Up-to-date: /home/nayr/FishRos/ch6/ch6_ws/install/fishbot_description/share/fishbot_description/urdf
+[0.122s] -- Up-to-date: /home/nayr/FishRos/ch6/ch6_ws/install/fishbot_description/share/fishbot_description/urdf/first_robot.pdf
+[0.122s] -- Up-to-date: /home/nayr/FishRos/ch6/ch6_ws/install/fishbot_description/share/fishbot_description/urdf/first_robot.urdf
+[0.122s] -- Up-to-date: /home/nayr/FishRos/ch6/ch6_ws/install/fishbot_description/share/fishbot_description/urdf/first_robot.gv
+[0.123s] Invoked command in '/home/nayr/FishRos/ch6/ch6_ws/build/fishbot_description' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/nayr/FishRos/ch6/ch6_ws/build/fishbot_description

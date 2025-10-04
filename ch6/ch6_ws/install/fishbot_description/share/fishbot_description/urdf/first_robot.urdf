@@ -1,0 +1,44 @@
+<!-- Ch 6.2.1 -->
+<?xml version="1.0"?>
+<robot name="first_robot">
+    <!-- Robot's Body -->
+    <link name="base_link">
+        <!-- Part Description -->
+        <visual>
+            <!-- Origin's Translation and Rotation -->
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+            <!-- Geometry -->
+            <geometry>
+                <cylinder radius="0.10" length="0.12"/>
+            </geometry>
+            <!-- Material and Color -->
+            <material name="white">
+                <color rgba="1.0 1.0 1.0 0.5"/>
+            </material>
+        </visual>
+    </link>
+
+    <!-- IMU Component -->
+    <link name="imu_link">
+        <!-- Part Description -->
+        <visual>
+            <!-- Origin's Translation and Rotation -->
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+            <!-- Geometry -->
+            <geometry>
+                <box size="0.02 0.02 0.02"/>
+            </geometry>
+            <!-- Material and Color -->
+            <material name="black">
+                <color rgba="0.0 0.0 0.0 0.5"/>
+            </material>
+        </visual>
+    </link>
+
+    <!-- Joints -->
+    <joint name="imu_joint" type="fixed">
+        <parent link="base_link"/>
+        <child link="imu_link"/>
+        <origin xyz="0.0 0.0 0.03" rpy="0.0 0.0 0.0"/>
+    </joint>
+</robot>
