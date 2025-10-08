@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<!-- Ch 6.2.3 -->
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="first_robot">
+    <xacro:macro name="base_link" params="length radius">
+        <!-- Robot's Body -->
+        <link name="base_link">
+            <!-- Part Description -->
+            <visual>
+                <!-- Origin's Translation and Rotation -->
+                <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+                <!-- Geometry -->
+                <geometry>
+                    <cylinder radius="${radius}" length="${length}"/>
+                </geometry>
+                <!-- Material and Color -->
+                <material name="white">
+                    <color rgba="1.0 1.0 1.0 0.5"/>
+                </material>
+            </visual>
+        </link>
+    </xacro:macro>
+    
+    <xacro:macro name="imu_link" params="imu_name xyz">
+        <!-- IMU Component -->
+        <link name="${imu_name}_link">
+            <!-- Part Description -->
+            <visual>
+                <!-- Origin's Translation and Rotation -->
+                <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+                <!-- Geometry -->
+                <geometry>
+                    <box size="0.02 0.02 0.02"/>
+                </geometry>
+                <!-- Material and Color -->
+                <material name="black">
+                    <color rgba="0.0 0.0 0.0 0.5"/>
+                </material>
+            </visual>
+        </link>
+
+        <!-- Joints -->
+        <joint name="${imu_name}_joint" type="fixed">
+            <parent link="base_link"/>
+            <child link="${imu_name}_link"/>
+            <origin xyz="${xyz}" rpy="0.0 0.0 0.0"/>
+        </joint>
+    </xacro:macro>
+
+    <xacro:base_link length="0.12" radius="0.1"/>
+    <xacro:imu_link imu_name="imu_up" xyz="0.0 0.0 0.03"/>
+    <xacro:imu_link imu_name="imu_down" xyz="0.0 0.0 -0.03"/>
+
+</robot>
