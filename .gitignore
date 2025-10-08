@@ -1,1 +1,65 @@
-ch5/rviz_tf.rviz
+# ROS/Colcon 构建文件
+build/
+install/
+log/
+devel/
+
+# CMake 构建文件
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+*.cmake
+!CMakeLists.txt
+
+# 编译生成的可执行文件
+*.out
+*.exe
+*.so
+*.dylib
+*.dll
+a.out
+
+# Python 编译文件
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+
+# 日志文件
+*.log
+*.log.*
+
+# 临时文件
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# IDE 文件
+.vscode/
+.idea/
+*.sublime-*
+
+# 备份文件
+*.back
+*.bak
+*.backup
+
+# 测试文件（如果不需要版本控制）
+test_results/
+Testing/
+
+# 特定于项目的临时文件
+novel1.txt
+novel2.txt
+novel3.txt
+
+# ROS 特定文件
+.rosinstall
+.rosinstall.bak
