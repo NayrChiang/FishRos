@@ -47,6 +47,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
     "/home/nayr/FishRos/ch6/ch6_ws/src/fishbot_description/launch"
     "/home/nayr/FishRos/ch6/ch6_ws/src/fishbot_description/urdf"
     "/home/nayr/FishRos/ch6/ch6_ws/src/fishbot_description/config"
+    "/home/nayr/FishRos/ch6/ch6_ws/src/fishbot_description/world"
     )
 endif()
 
