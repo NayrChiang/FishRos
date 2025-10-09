@@ -75,6 +75,23 @@
             <child link="laser_link"/>
             <origin xyz="0.0 0.0 0.05" rpy="0.0 0.0 0.0"/>
         </joint>
+
+        <gazebo reference="laser_cylinder_link">
+        <material>
+            <ambient>0.0 0.0 0.0 1.0</ambient>
+            <diffuse>0.05 0.05 0.05 1.0</diffuse>
+            <specular>0.1 0.1 0.1 1.0</specular>
+        </material>
+        </gazebo>
+
+        <gazebo reference="laser_link">
+        <material>
+            <ambient>0.0 0.0 0.0 1.0</ambient>
+            <diffuse>0.05 0.05 0.05 1.0</diffuse>
+            <specular>0.1 0.1 0.1 1.0</specular>
+        </material>
+        </gazebo>
+
     </xacro:macro>
 
 </robot>
