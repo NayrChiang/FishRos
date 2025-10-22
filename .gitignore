@@ -1,10 +1,10 @@
-# ROS/Colcon 构建文件
+# ROS/Colcon build files
 build/
 install/
 log/
 devel/
 
-# CMake 构建文件
+# CMake build files
 CMakeCache.txt
 CMakeFiles/
 cmake_install.cmake
@@ -12,7 +12,7 @@ Makefile
 *.cmake
 !CMakeLists.txt
 
-# 编译生成的可执行文件
+# Compiled binaries
 *.out
 *.exe
 *.so
@@ -20,7 +20,7 @@ Makefile
 *.dll
 a.out
 
-# Python 编译文件
+# Python compiled files
 __pycache__/
 *.py[cod]
 *$py.class
@@ -28,11 +28,11 @@ __pycache__/
 dist/
 build/
 
-# 日志文件
+# Log files
 *.log
 *.log.*
 
-# 临时文件
+# Temporary files
 *.tmp
 *.temp
 *.swp
@@ -41,25 +41,76 @@ build/
 .DS_Store
 Thumbs.db
 
-# IDE 文件
+# IDE files
 .vscode/
 .idea/
 *.sublime-*
 
-# 备份文件
+# Backup files
 *.back
 *.bak
 *.backup
 
-# 测试文件（如果不需要版本控制）
+# Test files (if not needed in version control)
 test_results/
 Testing/
 
-# 特定于项目的临时文件
+# Project-specific temporary files
 novel1.txt
 novel2.txt
 novel3.txt
 
-# ROS 特定文件
+# ROS specific files
 .rosinstall
 .rosinstall.bak
+
+# Gazebo/Simulation files
+.gazebo/
+.ignition/
+*.world.bak
+*.sdf.bak
+
+# ROS 2 specific
+colcon_ws/
+ros2_ws/
+*.pyc
+*.pyo
+
+# System files
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+
+# nyc test coverage
+.nyc_output
+
+# Dependency directories
+node_modules/
+
+# Optional npm cache directory
+.npm
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# dotenv environment variables file
+.env
+
+# MacOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
