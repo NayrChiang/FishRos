@@ -7,7 +7,7 @@ import os
 def generate_launch_description():
     # urdf path
     urdf_package_path = get_package_share_directory('fishbot_description')
-    default_urdf_path = os.path.join(urdf_package_path, 'urdf', 'first_robot.urdf')
+    default_urdf_path = os.path.join(urdf_package_path, 'urdf', 'fishbot/fishbot.urdf.xacro')
     default_rviz_path = os.path.join(urdf_package_path, 'config', 'display_robot_model.rviz')
     # Declare a urdf path parameter to modify
     action_declare_arg_model_path = launch.actions.DeclareLaunchArgument(
