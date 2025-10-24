@@ -12,6 +12,7 @@
 
 <!-- Include Gazebo Fortress plugins -->
 <xacro:include filename="$(find fishbot_description)/urdf/fishbot/plugins/gazebo_control_plugins.xacro"/>
+<xacro:include filename="$(find fishbot_description)/urdf/fishbot/plugins/gazebo_sensor_plugins.xacro"/>
 
 <!-- Robot body -->
 <xacro:base_xacro length="0.12" radius="0.10"/>
@@ -29,5 +30,6 @@
 
 <!-- Gazebo Fortress plugins -->
 <xacro:gazebo_control_plugin/>
+<xacro:gazebo_sensor_plugin/>
 
 </robot>

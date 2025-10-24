@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+  <!-- Fortress/Gazebo Sim sensors: publish on Gazebo Transport topics -->
+  <xacro:macro name="gazebo_sensor_plugin">
+
+    <!-- LIDAR (2D) -->
+    <gazebo reference="laser_link">
+      <sensor name="gpu_lidar" type="gpu_lidar">
+        <!-- Publish rate & topic -->
+        <update_rate>10</update_rate>
+        <topic>/model/fishbot/lidar/scan</topic>
+
+        <!-- Give ROS msgs a frame_id (Fortress supports gz_frame_id) -->
+        <gz_frame_id>laser_link</gz_frame_id>
+
+        <!-- Horizontal sweep -->
+        <ray>
+          <scan>
+            <horizontal>
+              <samples>360</samples>
+              <resolution>1</resolution>
+              <min_angle>0</min_angle>
+              <max_angle>6.283185307179586</max_angle> <!-- 2π -->
+            </horizontal>
+          </scan>
+          <range>
+            <min>0.12</min>
+            <max>8.0</max>
+            <resolution>0.015</resolution>
+          </range>
+          
+        </ray>
+        <always_on>true</always_on>
+        <visualize>true</visualize>
+      </sensor>
+
+      
+
+    </gazebo>
+
+  </xacro:macro>
+</robot>

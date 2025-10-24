@@ -1,4 +1,3 @@
-/home/nayr/FishRos/ch6/ch6_ws/install/fishbot_description/share/fishbot_description/launch/test.launch.py
 /home/nayr/FishRos/ch6/ch6_ws/install/fishbot_description/share/fishbot_description/launch/display_robot.launch.py
 /home/nayr/FishRos/ch6/ch6_ws/install/fishbot_description/share/fishbot_description/launch/gazebo_sim.launch.py
 /home/nayr/FishRos/ch6/ch6_ws/install/fishbot_description/share/fishbot_description/urdf/first_robot.pdf
@@ -10,11 +9,13 @@
 /home/nayr/FishRos/ch6/ch6_ws/install/fishbot_description/share/fishbot_description/urdf/fishbot/actuator/wheel.urdf.xacro
 /home/nayr/FishRos/ch6/ch6_ws/install/fishbot_description/share/fishbot_description/urdf/fishbot/actuator/caster.urdf.xacro
 /home/nayr/FishRos/ch6/ch6_ws/install/fishbot_description/share/fishbot_description/urdf/fishbot/plugins/gazebo_control_plugins.xacro
+/home/nayr/FishRos/ch6/ch6_ws/install/fishbot_description/share/fishbot_description/urdf/fishbot/plugins/gazebo_sensor_plugins.xacro
 /home/nayr/FishRos/ch6/ch6_ws/install/fishbot_description/share/fishbot_description/urdf/fishbot/sensor/camera.urdf.xacro
 /home/nayr/FishRos/ch6/ch6_ws/install/fishbot_description/share/fishbot_description/urdf/fishbot/sensor/imu.urdf.xacro
 /home/nayr/FishRos/ch6/ch6_ws/install/fishbot_description/share/fishbot_description/urdf/fishbot/sensor/laser.urdf.xacro
 /home/nayr/FishRos/ch6/ch6_ws/install/fishbot_description/share/fishbot_description/urdf/first_robot.xacro
 /home/nayr/FishRos/ch6/ch6_ws/install/fishbot_description/share/fishbot_description/config/first_robot_config.rviz
+/home/nayr/FishRos/ch6/ch6_ws/install/fishbot_description/share/fishbot_description/config/fishbot_config.rviz
 /home/nayr/FishRos/ch6/ch6_ws/install/fishbot_description/share/fishbot_description/config/display_robot_model.rviz
 /home/nayr/FishRos/ch6/ch6_ws/install/fishbot_description/share/fishbot_description/world/custom_room.world
 /home/nayr/FishRos/ch6/ch6_ws/install/fishbot_description/share/ament_index/resource_index/package_run_dependencies/fishbot_description
