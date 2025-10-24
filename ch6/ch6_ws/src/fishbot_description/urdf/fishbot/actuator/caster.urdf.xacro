@@ -41,6 +41,7 @@
         </joint>
 
         <gazebo reference="${caster_name}_link">
+            <material>Gazebo/Yellow</material>
             <mu1 value="0.0"/>
             <mu2 value="0.0"/>
             <kp value="1000000000.0"/>

@@ -1,81 +1,37 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro">
-    <!-- Gazebo Fortress (Ignition Gazebo) compatible differential drive plugin -->
-    <xacro:macro name="gazebo_control_plugin">
-        <gazebo>
-            <plugin name="gz::sim::systems::DiffDrive" filename="gz-sim-diff-drive-system">
-                <ros>
-                    <namespace>/</namespace>
-                    <remapping>cmd_vel:=cmd_vel</remapping>
-                    <remapping>odom:=odom</remapping>
-                </ros>
-                <update_rate>30</update_rate>
-                <!-- Wheel joints -->
-                <left_joint>left_wheel_joint</left_joint>
-                <right_joint>right_wheel_joint</right_joint>
-                <!-- Kinematic parameters -->
-                <wheel_separation>0.2</wheel_separation>
-                <wheel_diameter>0.064</wheel_diameter>
-                <!-- Limits -->
-                <max_wheel_torque>20</max_wheel_torque>
-                <max_wheel_acceleration>1.0</max_wheel_acceleration>
-                <!-- Output -->
-                <publish_odom>true</publish_odom>
-                <publish_odom_tf>true</publish_odom_tf>
-                <publish_wheel_tf>true</publish_wheel_tf>
-                <odometry_frame>odom</odometry_frame>
-                <robot_base_frame>base_footprint</robot_base_frame>
-            </plugin>
-        </gazebo>
-    </xacro:macro>
+  <xacro:macro name="gazebo_control_plugin">
+    <!-- Put plugin under a top-level <gazebo> so URDF->SDF conversion keeps it -->
+    <gazebo>
+      <plugin
+        filename="libignition-gazebo-diff-drive-system.so"
+        name="ignition::gazebo::systems::DiffDrive">
 
-    <!-- Gazebo Fortress compatible IMU plugin -->
-    <!-- <xacro:macro name="gazebo_fortress_imu_plugin">
-        <gazebo reference="imu_link">
-            <plugin name="gz::sim::systems::Imu" filename="gz-sim-imu-system">
-                <ros>
-                    <namespace>/</namespace>
-                    <remapping>imu:=imu</remapping>
-                </ros>
-                <update_rate>100</update_rate>
-                <topic>imu</topic>
-            </plugin>
-        </gazebo>
-    </xacro:macro> -->
+        <!-- Wheels (repeat tags if multiple wheels per side) -->
+        <left_joint>left_wheel_joint</left_joint>
+        <right_joint>right_wheel_joint</right_joint>
 
-    <!-- Gazebo Fortress compatible LiDAR plugin -->
-    <!-- <xacro:macro name="gazebo_fortress_laser_plugin">
-        <gazebo reference="laser_link">
-            <plugin name="gz::sim::systems::LaserScan" filename="gz-sim-laserscan-system">
-                <ros>
-                    <namespace>/</namespace>
-                    <remapping>scan:=scan</remapping>
-                </ros>
-                <update_rate>10</update_rate>
-                <topic>scan</topic>
-                <min_angle>-3.14159</min_angle>
-                <max_angle>3.14159</max_angle>
-                <min_range>0.1</min_range>
-                <max_range>10.0</max_range>
-                <range_resolution>0.01</range_resolution>
-            </plugin>
-        </gazebo>
-    </xacro:macro> -->
+        <!-- Geometry -->
+        <wheel_separation>0.2</wheel_separation>
+        <!-- 0.064 diameter -> 0.032 radius -->
+        <wheel_radius>0.032</wheel_radius>
 
-    <!-- Gazebo Fortress compatible camera plugin -->
-    <!-- <xacro:macro name="gazebo_fortress_camera_plugin">
-        <gazebo reference="camera_link">
-            <plugin name="gz::sim::systems::Camera" filename="gz-sim-camera-system">
-                <ros>
-                    <namespace>/</namespace>
-                    <remapping>image_raw:=camera/image_raw</remapping>
-                </ros>
-                <update_rate>30</update_rate>
-                <topic>camera/image_raw</topic>
-                <width>640</width>
-                <height>480</height>
-                <format>R8G8B8</format>
-            </plugin>
-        </gazebo>
-    </xacro:macro> -->
+        <!-- Topics on Gazebo Transport (you can keep defaults if you like) -->
+        <topic>/model/fishbot/cmd_vel</topic>
+        <odom_topic>/model/fishbot/odometry</odom_topic>
+        <tf_topic>/model/fishbot/tf</tf_topic>
+
+        <!-- Frames + publish rate -->
+        <frame_id>odom</frame_id>
+        <child_frame_id>base_footprint</child_frame_id>
+        <odom_publish_frequency>30</odom_publish_frequency>
+
+        <!-- Optional motion limits (examples) -->
+        <max_linear_velocity>1.0</max_linear_velocity>
+        <max_angular_velocity>3.0</max_angular_velocity>
+        <max_linear_acceleration>2.0</max_linear_acceleration>
+        <max_angular_acceleration>6.0</max_angular_acceleration>
+      </plugin>
+    </gazebo>
+  </xacro:macro>
 </robot>

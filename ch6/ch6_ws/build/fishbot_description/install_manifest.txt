@@ -1,3 +1,4 @@
+/home/nayr/FishRos/ch6/ch6_ws/install/fishbot_description/share/fishbot_description/launch/test.launch.py
 /home/nayr/FishRos/ch6/ch6_ws/install/fishbot_description/share/fishbot_description/launch/display_robot.launch.py
 /home/nayr/FishRos/ch6/ch6_ws/install/fishbot_description/share/fishbot_description/launch/gazebo_sim.launch.py
 /home/nayr/FishRos/ch6/ch6_ws/install/fishbot_description/share/fishbot_description/urdf/first_robot.pdf
@@ -8,7 +9,6 @@
 /home/nayr/FishRos/ch6/ch6_ws/install/fishbot_description/share/fishbot_description/urdf/fishbot/base.urdf.xacro
 /home/nayr/FishRos/ch6/ch6_ws/install/fishbot_description/share/fishbot_description/urdf/fishbot/actuator/wheel.urdf.xacro
 /home/nayr/FishRos/ch6/ch6_ws/install/fishbot_description/share/fishbot_description/urdf/fishbot/actuator/caster.urdf.xacro
-/home/nayr/FishRos/ch6/ch6_ws/install/fishbot_description/share/fishbot_description/urdf/fishbot/plugins/gazebo_control_plugins_classic.xacro
 /home/nayr/FishRos/ch6/ch6_ws/install/fishbot_description/share/fishbot_description/urdf/fishbot/plugins/gazebo_control_plugins.xacro
 /home/nayr/FishRos/ch6/ch6_ws/install/fishbot_description/share/fishbot_description/urdf/fishbot/sensor/camera.urdf.xacro
 /home/nayr/FishRos/ch6/ch6_ws/install/fishbot_description/share/fishbot_description/urdf/fishbot/sensor/imu.urdf.xacro
