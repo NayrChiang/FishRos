@@ -1,4 +1,8 @@
-# ROS/Colcon build files
+# ===========================================
+# ROS 2 / FishRos Project .gitignore
+# ===========================================
+
+# ROS 2 / Colcon build artifacts
 build/
 install/
 log/
@@ -9,16 +13,43 @@ CMakeCache.txt
 CMakeFiles/
 cmake_install.cmake
 Makefile
+Makefile2
 *.cmake
 !CMakeLists.txt
+CTestConfiguration.ini
+CTestCustom.cmake
+CTestTestfile.cmake
+cmake_clean.cmake
+build.make
+compiler_depend.make
+compiler_depend.ts
+depend.make
+DependInfo.cmake
+flags.make
+link.txt
+progress.make
+progress.marks
+TargetDirectories.txt
+colcon_build.rc
+colcon_command_prefix_build.sh
+colcon_command_prefix_build.sh.env
+install_manifest.txt
 
-# Compiled binaries
+# Compiled binaries and executables
 *.out
 *.exe
 *.so
 *.dylib
 *.dll
 a.out
+learn_cmake
+cpp_node
+person_node
+learn_auto
+learn_functional
+learn_lambda
+learn_shared_ptr
+learn_thread
 
 # Python compiled files
 __pycache__/
@@ -26,11 +57,14 @@ __pycache__/
 *$py.class
 *.egg-info/
 dist/
-build/
+*.pyc
+*.pyo
 
 # Log files
 *.log
 *.log.*
+latest
+latest_build
 
 # Temporary files
 *.tmp
@@ -50,8 +84,9 @@ Thumbs.db
 *.back
 *.bak
 *.backup
+CMakeLists.txt.back
 
-# Test files (if not needed in version control)
+# Test files
 test_results/
 Testing/
 
@@ -69,42 +104,36 @@ novel3.txt
 .ignition/
 *.world.bak
 *.sdf.bak
+frames_*.gv
+frames_*.pdf
 
-# ROS 2 specific
+# ROS 2 workspace specific
 colcon_ws/
 ros2_ws/
-*.pyc
-*.pyo
+ch*_ws/build/
+ch*_ws/install/
+ch*_ws/log/
 
 # System files
 *.pid
 *.seed
 *.pid.lock
 
-# Coverage directory used by tools like istanbul
+# Coverage and testing
 coverage/
-
-# nyc test coverage
 .nyc_output
 
-# Dependency directories
+# Node.js (if any)
 node_modules/
-
-# Optional npm cache directory
 .npm
-
-# Optional REPL history
 .node_repl_history
-
-# Output of 'npm pack'
 *.tgz
-
-# Yarn Integrity file
 .yarn-integrity
 
-# dotenv environment variables file
+# Environment files
 .env
 
+# OS specific files
 # MacOS
 .DS_Store
 .AppleDouble
@@ -114,3 +143,12 @@ node_modules/
 Thumbs.db
 ehthumbs.db
 Desktop.ini
+
+# Linux
+*~
+
+# Gazebo models (if large)
+gazebo_models/
+
+# RViz configuration backups
+*.rviz.bak

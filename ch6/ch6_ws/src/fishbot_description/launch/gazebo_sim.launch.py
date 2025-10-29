@@ -44,7 +44,7 @@ def generate_launch_description():
             [get_package_share_directory('ros_gz_sim'), '/launch', '/gz_sim.launch.py']
         ),
         launch_arguments=[
-            ('gz_args', ['-v 4 -r ', default_gazebo_world_path])
+            ('gz_args', ['-v 1 -r ', default_gazebo_world_path])
         ]
     )
 
@@ -79,9 +79,9 @@ def generate_launch_description():
             '/model/fishbot/joint_state@sensor_msgs/msg/JointState@ignition.msgs.Model',
 
             # Sensors (Gazebo -> ROS)
-            '/model/fishbot/lidar/scan@sensor_msgs/msg/LaserScan@ignition.msgs.LaserScan'
-            # '/model/fishbot/imu@sensor_msgs/msg/Imu@ignition.msgs.IMU',
-            # '/model/fishbot/depth_image@sensor_msgs/msg/Image@ignition.msgs.Image',
+            '/model/fishbot/lidar/scan@sensor_msgs/msg/LaserScan@ignition.msgs.LaserScan',
+            '/model/fishbot/imu@sensor_msgs/msg/Imu@ignition.msgs.IMU',
+            '/model/fishbot/camera/image_raw@sensor_msgs/msg/Image@ignition.msgs.Image',
         ],
         remappings=[
             # Standard ROS names
@@ -91,20 +91,31 @@ def generate_launch_description():
             ('/model/fishbot/joint_state', '/joint_states'),
 
             # Sensor topic remaps
-            ('/model/fishbot/lidar/scan', '/scan')
-            # ('/model/fishbot/imu', '/imu'),
-            # ('/model/fishbot/depth_image', '/camera/depth/image_raw'),
+            ('/model/fishbot/lidar/scan', '/scan'),
+            ('/model/fishbot/imu', '/imu'),
+            ('/model/fishbot/camera/image_raw', '/camera/image_raw'),
         ],
 
         output='screen'
     )
 
     # 7) Small delay so Gazebo is up before spawning/bridging (optional)
-    delayed_spawn = TimerAction(period=2.0, actions=[action_spawn_entity, action_ros_gz_bridge])
+    delayed_spawn = TimerAction(period=1.0, actions=[action_spawn_entity, action_ros_gz_bridge])
+
+    action_launch_rviz = Node(
+            package='rviz2',
+            executable='rviz2',
+            name='rviz2',
+            output='screen',
+            arguments=['-d', os.path.join(get_package_share_directory('fishbot_description'), 'config', 'fishbot_config1.rviz')]
+        )
 
     return launch.LaunchDescription([
         action_declare_arg_model_path,
         action_robot_state_publisher,
         action_launch_gazebo,
-        delayed_spawn
+        action_spawn_entity,
+        action_ros_gz_bridge,
+        # delayed_spawn,
+        action_launch_rviz
     ])
