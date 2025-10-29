@@ -14,10 +14,6 @@ find_package(ament_cmake REQUIRED)
 # find_package(launch_ros REQUIRED)
 
 
-install(
-  DIRECTORY launch urdf config world
-  DESTINATION share/${PROJECT_NAME}
-)
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
@@ -30,5 +26,10 @@ if(BUILD_TESTING)
   set(ament_cmake_cpplint_FOUND TRUE)
   ament_lint_auto_find_test_dependencies()
 endif()
+
+install(
+  DIRECTORY launch urdf config world
+  DESTINATION share/${PROJECT_NAME}
+)
 
 ament_package()
