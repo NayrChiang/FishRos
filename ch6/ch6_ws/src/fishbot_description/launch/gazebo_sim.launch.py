@@ -44,7 +44,7 @@ def generate_launch_description():
             [get_package_share_directory('ros_gz_sim'), '/launch', '/gz_sim.launch.py']
         ),
         launch_arguments=[
-            ('gz_args', ['-v 1 -r ', default_gazebo_world_path])
+            ('gz_args', ['-v 2 -r ', default_gazebo_world_path])
         ]
     )
 
@@ -70,13 +70,13 @@ def generate_launch_description():
         executable='parameter_bridge',
         arguments=[
             # Drive + odom + tf + clock
-            '/model/fishbot/cmd_vel@geometry_msgs/msg/Twist@ignition.msgs.Twist',
-            '/model/fishbot/odometry@nav_msgs/msg/Odometry@ignition.msgs.Odometry',
-            '/model/fishbot/tf@tf2_msgs/msg/TFMessage@ignition.msgs.Pose_V',
+            # '/model/fishbot/cmd_vel@geometry_msgs/msg/Twist@ignition.msgs.Twist',
+            # '/model/fishbot/odometry@nav_msgs/msg/Odometry@ignition.msgs.Odometry',
+            # '/model/fishbot/tf@tf2_msgs/msg/TFMessage@ignition.msgs.Pose_V',
             '/clock@rosgraph_msgs/msg/Clock@ignition.msgs.Clock',
 
             # Joint states (Gazebo -> ROS)
-            '/model/fishbot/joint_state@sensor_msgs/msg/JointState@ignition.msgs.Model',
+            # '/model/fishbot/joint_state@sensor_msgs/msg/JointState@ignition.msgs.Model',
 
             # Sensors (Gazebo -> ROS)
             '/model/fishbot/lidar/scan@sensor_msgs/msg/LaserScan@ignition.msgs.LaserScan',
@@ -85,10 +85,10 @@ def generate_launch_description():
         ],
         remappings=[
             # Standard ROS names
-            ('/model/fishbot/cmd_vel', '/cmd_vel'),
-            ('/model/fishbot/odometry', '/odom'),
-            ('/model/fishbot/tf', '/tf'),
-            ('/model/fishbot/joint_state', '/joint_states'),
+            # ('/model/fishbot/cmd_vel', '/cmd_vel'),
+            # ('/model/fishbot/odometry', '/odom'),
+            # ('/model/fishbot/tf', '/tf'),
+            # ('/model/fishbot/joint_state', '/joint_states'),
 
             # Sensor topic remaps
             ('/model/fishbot/lidar/scan', '/scan'),
@@ -110,6 +110,21 @@ def generate_launch_description():
             arguments=['-d', os.path.join(get_package_share_directory('fishbot_description'), 'config', 'fishbot_config1.rviz')]
         )
 
+    action_load_joint_state_controller = launch.actions.ExecuteProcess(
+        cmd=['ros2', 'control', 'load_controller', '--set-state', 'active', 'fishbot_joint_state_broadcaster'],
+        output='screen'
+    )
+
+    # action_load_effort_controller = launch.actions.ExecuteProcess(
+    #     cmd=['ros2', 'control', 'load_controller', '--set-state', 'active', 'fishbot_effort_controller'],
+    #     output='screen'
+    # )
+
+    action_load_diff_drive_controller = launch.actions.ExecuteProcess(
+        cmd=['ros2', 'control', 'load_controller', '--set-state', 'active', 'fishbot_diff_drive_controller'],
+        output='screen'
+    )
+
     return launch.LaunchDescription([
         action_declare_arg_model_path,
         action_robot_state_publisher,
@@ -117,5 +132,23 @@ def generate_launch_description():
         action_spawn_entity,
         action_ros_gz_bridge,
         # delayed_spawn,
-        action_launch_rviz
+        # action_launch_rviz,
+        launch.actions.RegisterEventHandler(
+            event_handler=launch.event_handlers.OnProcessExit(
+                target_action=action_spawn_entity,
+                on_exit=action_load_joint_state_controller
+            )
+        ),
+        # launch.actions.RegisterEventHandler(
+        #     event_handler=launch.event_handlers.OnProcessExit(
+        #         target_action=action_load_joint_state_controller,
+        #         on_exit=action_load_effort_controller
+        #     )
+        # )
+        launch.actions.RegisterEventHandler(
+            event_handler=launch.event_handlers.OnProcessExit(
+                target_action=action_load_joint_state_controller,
+                on_exit=action_load_diff_drive_controller
+            )
+        )
     ])
