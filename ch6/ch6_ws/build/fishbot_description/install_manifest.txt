@@ -1,5 +1,6 @@
 /home/nayr/FishRos/ch6/ch6_ws/install/fishbot_description/share/fishbot_description/launch/gazebo_sim.launch.py
 /home/nayr/FishRos/ch6/ch6_ws/install/fishbot_description/share/fishbot_description/launch/display_robot.launch.py
+/home/nayr/FishRos/ch6/ch6_ws/install/fishbot_description/share/fishbot_description/launch/gazebo_sim_r2control.launch.py
 /home/nayr/FishRos/ch6/ch6_ws/install/fishbot_description/share/fishbot_description/urdf/fishbot/actuator/wheel.urdf.xacro
 /home/nayr/FishRos/ch6/ch6_ws/install/fishbot_description/share/fishbot_description/urdf/fishbot/actuator/caster.urdf.xacro
 /home/nayr/FishRos/ch6/ch6_ws/install/fishbot_description/share/fishbot_description/urdf/fishbot/fishbot.urdf.xacro
