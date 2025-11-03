@@ -12,7 +12,7 @@ from launch_ros.parameter_descriptions import ParameterValue
 def generate_launch_description():
     # URDF path - using Fortress compatible version
     urdf_package_path = get_package_share_directory('fishbot_description')
-    default_xacro_path = os.path.join(urdf_package_path, 'urdf', 'fishbot/fishbot.urdf.xacro')
+    default_xacro_path = os.path.join(urdf_package_path, 'urdf', 'fishbot/fishbot_r2control.urdf.xacro')
     default_gazebo_world_path = os.path.join(urdf_package_path, 'world', 'custom_room.world')
 
     # 1) CLI arg for model path
