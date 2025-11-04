@@ -30,10 +30,13 @@ link.txt
 progress.make
 progress.marks
 TargetDirectories.txt
-colcon_build.rc
-colcon_command_prefix_build.sh
-colcon_command_prefix_build.sh.env
 install_manifest.txt
+
+# Colcon specific files
+colcon_build.rc
+COLCON_IGNORE
+colcon_command_prefix_*.sh
+colcon_command_prefix_*.sh.env
 
 # Compiled binaries and executables
 *.out
@@ -56,9 +59,13 @@ __pycache__/
 *.py[cod]
 *$py.class
 *.egg-info/
+*.egg
 dist/
 *.pyc
 *.pyo
+.pytest_cache/
+.coverage
+htmlcov/
 
 # Log files
 *.log
@@ -113,6 +120,7 @@ ros2_ws/
 ch*_ws/build/
 ch*_ws/install/
 ch*_ws/log/
+ch*_ws/devel/
 
 # System files
 *.pid
@@ -132,6 +140,7 @@ node_modules/
 
 # Environment files
 .env
+.env.local
 
 # OS specific files
 # MacOS
@@ -152,3 +161,8 @@ gazebo_models/
 
 # RViz configuration backups
 *.rviz.bak
+
+# Navigation2 specific files
+*.pgm.bak
+*.yaml.bak
+*.map

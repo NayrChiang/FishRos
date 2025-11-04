@@ -20,9 +20,10 @@ def main():
     goal_pose.pose.orientation.w = 1.0
     nav.goToPose(goal_pose)
     while not nav.isTaskComplete():
-        feedback = nav.getFeedback()
-        # nav.get_logger().info(f'Navigation feedback: {feedback}')
-        nav.get_logger().info(f'Remaining distance: {feedback.distance_remaining:.2f} meters')
+        feedback = nav.getFeedback()  # may be None
+        if feedback is not None:
+            # nav.get_logger().info(f'Navigation feedback: {feedback}')
+            nav.get_logger().info(f'Remaining distance: {feedback.distance_remaining:.2f} meters')
         # nav.cancelTask()
         time.sleep(0.5)
 
