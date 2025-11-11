@@ -6,13 +6,51 @@ from nav2_simple_commander.robot_navigator import BasicNavigator, TaskResult
 from rclpy.node import Node
 import rclpy.time
 from tf2_ros import TransformListener, Buffer
-from tf_transformations import euler_from_quaternion, quaternion_from_euler
 import math
 from autopatrol_interfaces.srv import SpeechText
 from sensor_msgs.msg import Image
 from cv_bridge import CvBridge
 import cv2
 import os
+
+def quaternion_from_euler(roll, pitch, yaw):
+    """Convert Euler angles to quaternion [x, y, z, w]"""
+    cy = math.cos(yaw * 0.5)
+    sy = math.sin(yaw * 0.5)
+    cp = math.cos(pitch * 0.5)
+    sp = math.sin(pitch * 0.5)
+    cr = math.cos(roll * 0.5)
+    sr = math.sin(roll * 0.5)
+    
+    qx = sr * cp * cy - cr * sp * sy
+    qy = cr * sp * cy + sr * cp * sy
+    qz = cr * cp * sy - sr * sp * cy
+    qw = cr * cp * cy + sr * sp * sy
+    
+    return [qx, qy, qz, qw]
+
+def euler_from_quaternion(quaternion):
+    """Convert quaternion [x, y, z, w] to Euler angles (roll, pitch, yaw)"""
+    x, y, z, w = quaternion
+    
+    # Roll (x-axis rotation)
+    sinr_cosp = 2 * (w * x + y * z)
+    cosr_cosp = 1 - 2 * (x * x + y * y)
+    roll = math.atan2(sinr_cosp, cosr_cosp)
+    
+    # Pitch (y-axis rotation)
+    sinp = 2 * (w * y - z * x)
+    if abs(sinp) >= 1:
+        pitch = math.copysign(math.pi / 2, sinp)  # Use 90 degrees if out of range
+    else:
+        pitch = math.asin(sinp)
+    
+    # Yaw (z-axis rotation)
+    siny_cosp = 2 * (w * z + x * y)
+    cosy_cosp = 1 - 2 * (y * y + z * z)
+    yaw = math.atan2(siny_cosp, cosy_cosp)
+    
+    return [roll, pitch, yaw]
 
 class PatrolNode(BasicNavigator):
     def __init__(self):
@@ -140,7 +178,7 @@ def main():
             patrol.speech_text(f'Navigating to point {x}, {y}')
             patrol.nav_to_pose(target_pose)
             patrol.speech_text(f'Arrived at point {x}, {y}, Saving image...')
-            patrol.save_img()
-            patrol.speech_text(f'Image saved')
+            # patrol.save_img()
+            # patrol.speech_text(f'Image saved')
 
     rclpy.shutdown()

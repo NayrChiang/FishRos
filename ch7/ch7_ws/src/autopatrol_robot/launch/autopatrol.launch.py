@@ -41,8 +41,6 @@ def generate_launch_description():
     )
     
     return launch.LaunchDescription([
-        # gazebo_sim_launch,
-        # navigation2_launch,
         patrol_node,
         speaker_node,
     ])

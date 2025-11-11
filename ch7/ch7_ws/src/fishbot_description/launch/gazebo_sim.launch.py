@@ -22,13 +22,20 @@ def generate_launch_description():
         default_value=str(default_xacro_path),
         description='Model File Path'
     )
+    
+    # 2) CLI arg for world path
+    action_declare_arg_world_path = launch.actions.DeclareLaunchArgument(
+        name='world',
+        default_value=str(default_gazebo_world_path),
+        description='Gazebo World File Path'
+    )
 
-    # 2) Process xacro -> URDF string
+    # 3) Process xacro -> URDF string
     robot_description_cmd = launch.substitutions.Command(
         ['xacro ', LaunchConfiguration('model')]
     )
 
-    # 3) Robot State Publisher consumes the param (and sim time)
+    # 4) Robot State Publisher consumes the param (and sim time)
     action_robot_state_publisher = launch_ros.actions.Node(
         package='robot_state_publisher',
         executable='robot_state_publisher',
@@ -39,17 +46,17 @@ def generate_launch_description():
         output='screen'
     )
 
-    # 4) Launch Gazebo Fortress
+    # 5) Launch Gazebo Fortress
     action_launch_gazebo = launch.actions.IncludeLaunchDescription(
         launch.launch_description_sources.PythonLaunchDescriptionSource(
             [get_package_share_directory('ros_gz_sim'), '/launch', '/gz_sim.launch.py']
         ),
         launch_arguments=[
-            ('gz_args', ['-v 2 -r ', default_gazebo_world_path])
+            ('gz_args', ['-v 2 -r ', LaunchConfiguration('world')])
         ]
     )
 
-    # 5) Spawn robot in Gazebo from the *parameter* (not topic)
+    # 6) Spawn robot in Gazebo from the *parameter* (not topic)
     action_spawn_entity = Node(
         package='ros_gz_sim',
         executable='create',
@@ -65,7 +72,7 @@ def generate_launch_description():
         output='screen'
     )
 
-    # 6) ROS 2 <-> Gazebo bridges
+    # 7) ROS 2 <-> Gazebo bridges
     action_ros_gz_bridge = Node(
         package='ros_gz_bridge',
         executable='parameter_bridge',
@@ -100,23 +107,23 @@ def generate_launch_description():
         output='screen'
     )
 
-    # 7) Small delay so Gazebo is up before spawning/bridging (optional)
+    # 8) Small delay so Gazebo is up before spawning/bridging (optional)
     delayed_spawn = TimerAction(period=1.0, actions=[action_spawn_entity, action_ros_gz_bridge])
 
+    # 9) Launch RViz2
     action_launch_rviz = Node(
             package='rviz2',
             executable='rviz2',
             name='rviz2',
             output='screen',
-            arguments=['-d', os.path.join(get_package_share_directory('fishbot_description'), 'config', 'fishbot_config1.rviz')]
+            arguments=['-d', os.path.join(get_package_share_directory('fishbot_description'), 'config', 'fishbot_config.rviz')]
         )
 
     return launch.LaunchDescription([
         action_declare_arg_model_path,
+        action_declare_arg_world_path,
         action_robot_state_publisher,
         action_launch_gazebo,
-        # action_spawn_entity,
-        # action_ros_gz_bridge,
         delayed_spawn,
         # action_launch_rviz,
     ])
