@@ -7,16 +7,16 @@ from message_filters import Subscriber, ApproximateTimeSynchronizer
 class TimeSyncTestNode(Node):
     def __init__(self):
         super().__init__('sync_node')
-        # 1. 订阅 imu 话题并注册回调并打印时间戳
+        # 1. Subscribe to imu topic and register callback to print timestamp
         self.imu_sub = Subscriber(self, Imu, 'imu')
         self.imu_sub.registerCallback(self.imu_callback)
-        # 2. 订阅 odom 话题并注册回调函数打印时间戳
+        # 2. Subscribe to odom topic and register callback to print timestamp
         self.odom_sub = Subscriber(self, Odometry, 'odom')
         self.odom_sub.registerCallback(self.odom_callback)
-        # 3. 创建对应策略的同步器同步两个话题，并注册回调函数打印数据
+        # 3. Create synchronizer with corresponding policy to sync two topics and register callback to print data
         self.synchronizer = ApproximateTimeSynchronizer(
             [self.imu_sub, self.odom_sub], 10,
-            slop=0.01,  # slop 表示时间窗口单位为秒
+            slop=0.01,  # slop represents time window in seconds
         )
         self.synchronizer.registerCallback(self.result_callback)
 

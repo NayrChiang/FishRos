@@ -10,13 +10,13 @@ public:
       : rclcpp_lifecycle::LifecycleNode("lifecyclenode") {
     timer_period_ = 1.0;
     timer_ = nullptr;
-    RCLCPP_INFO(get_logger(), "%s: 已创建", get_name());
+    RCLCPP_INFO(get_logger(), "%s: Created", get_name());
   }
 
   CallbackReturn on_configure(const rclcpp_lifecycle::State &state) override {
     (void)state;
     timer_period_ = 1.0;
-    RCLCPP_INFO(get_logger(), "on_configure():配置周期 timer_period");
+    RCLCPP_INFO(get_logger(), "on_configure(): Configure timer_period");
     return rclcpp_lifecycle::node_interfaces::LifecycleNodeInterface::
         CallbackReturn::SUCCESS;
   }
@@ -25,8 +25,8 @@ public:
     (void)state;
     timer_ = create_wall_timer(
         std::chrono::seconds(static_cast<int>(timer_period_)),
-        [this]() { RCLCPP_INFO(get_logger(), "定时器打印进行中..."); });
-    RCLCPP_INFO(get_logger(), "on_activate():处理激活指令，创建定时器");
+        [this]() { RCLCPP_INFO(get_logger(), "Timer printing in progress..."); });
+    RCLCPP_INFO(get_logger(), "on_activate(): Handle activate command, create timer");
     return rclcpp_lifecycle::node_interfaces::LifecycleNodeInterface::
         CallbackReturn::SUCCESS;
   }
@@ -34,7 +34,7 @@ public:
   CallbackReturn on_deactivate(const rclcpp_lifecycle::State &state) override {
     (void)state;
     timer_.reset();
-    RCLCPP_INFO(get_logger(), "on_deactivate():处理失活指令，停止定时器");
+    RCLCPP_INFO(get_logger(), "on_deactivate(): Handle deactivate command, stop timer");
     return rclcpp_lifecycle::node_interfaces::LifecycleNodeInterface::
         CallbackReturn::SUCCESS;
   }
@@ -42,7 +42,7 @@ public:
   CallbackReturn on_shutdown(const rclcpp_lifecycle::State &state) override {
     (void)state;
     timer_.reset();
-    RCLCPP_INFO(get_logger(), "on_shutdown():处理关闭指令");
+    RCLCPP_INFO(get_logger(), "on_shutdown(): Handle shutdown command");
     return rclcpp_lifecycle::node_interfaces::LifecycleNodeInterface::
         CallbackReturn::SUCCESS;
   }

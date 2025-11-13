@@ -11,36 +11,36 @@ using Imu = sensor_msgs::msg::Imu;
 using Odometry = nav_msgs::msg::Odometry;
 using namespace message_filters;
 
-// 同步策略：严格时间对齐策略
+// Synchronization policy: Strict time alignment policy
 // using MySyncPolicy = sync_policies::ExactTime<Imu, Odometry>;
-// 同步策略：大约时间对齐策略
+// Synchronization policy: Approximate time alignment policy
 // using MySyncPolicy = sync_policies::ApproximateTime<Imu, Odometry>;
-// 同步策略：最新时间对齐策略
+// Synchronization policy: Latest time alignment policy
 using MySyncPolicy = sync_policies::LatestTime<Imu, Odometry>;
 
 
 class TimeSyncTestNode : public rclcpp::Node {
 public:
   TimeSyncTestNode() : Node("sync_node") {
-    // 1.订阅 imu 话题并注册回调并打印时间戳
+    // 1. Subscribe to imu topic and register callback to print timestamp
     imu_sub_ = std::make_shared<Subscriber<Imu>>(this, "imu");
     imu_sub_->registerCallback<Imu::SharedPtr>(
         [&](const Imu::SharedPtr &imu_msg) {
           RCLCPP_INFO(get_logger(), "imu(%u,%u)", imu_msg->header.stamp.sec,
                       imu_msg->header.stamp.nanosec);
         });
-    // 2.订阅 odom 话题并注册回调函数打印时间戳
+    // 2. Subscribe to odom topic and register callback to print timestamp
     odom_sub_ = std::make_shared<Subscriber<Odometry>>(this, "odom");
     odom_sub_->registerCallback<Odometry::SharedPtr>(
         [&](const Odometry::SharedPtr &odom_msg) {
           RCLCPP_INFO(get_logger(), "odom(%u,%u)", odom_msg->header.stamp.sec,
                       odom_msg->header.stamp.nanosec);
         });
-    // 3.创建对应策略的同步器同步两个话题，并注册回调函数打印数据
+    // 3. Create synchronizer with corresponding policy to sync two topics and register callback to print data
     // synchronizer_ = std::make_shared<Synchronizer<MySyncPolicy>>(
     //     MySyncPolicy(10), *imu_sub_, *odom_sub_);
     
-    // 3.创建对应策略的同步器同步两个话题，并注册回调函数打印数据
+    // 3. Create synchronizer with corresponding policy to sync two topics and register callback to print data
     synchronizer_ = std::make_shared<Synchronizer<MySyncPolicy>>(
         MySyncPolicy(), *imu_sub_, *odom_sub_);
     synchronizer_->registerCallback(

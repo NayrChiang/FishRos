@@ -8,10 +8,10 @@ public:
     publisher_ =
         this->create_publisher<std_msgs::msg::Int32>("loaned_int_topic", 10);
     timer_ = this->create_wall_timer(std::chrono::seconds(1), [&]() {
-      auto message = publisher_->borrow_loaned_message(); // 1.租借消息
-      message.get().data = count_++;  // 2.放入数据
-      RCLCPP_INFO(this->get_logger(), "发布数据:%d", message.get().data);
-      publisher_->publish(std::move(message));  // 3.发布数据
+      auto message = publisher_->borrow_loaned_message(); // 1. Borrow message
+      message.get().data = count_++;  // 2. Put data
+      RCLCPP_INFO(this->get_logger(), "Published data: %d", message.get().data);
+      publisher_->publish(std::move(message));  // 3. Publish data
     });
   }
 

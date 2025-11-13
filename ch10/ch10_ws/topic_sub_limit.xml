@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <profiles xmlns="http://www.eprosima.com/XMLSchemas/fastRTPS_Profiles">
 
-    <!-- 默认发布者配置 -->
+    <!-- Default publisher configuration -->
     <publisher profile_name="default_publisher" is_default_profile="true">
         <historyMemoryPolicy>DYNAMIC</historyMemoryPolicy>
     </publisher>
 
-    <!-- 默认订阅者配置 -->
+    <!-- Default subscriber configuration -->
     <subscriber profile_name="default_subscriber" is_default_profile="true">
         <historyMemoryPolicy>DYNAMIC</historyMemoryPolicy>
     </subscriber>
 
-   <!-- 话题 chatter 的发布者配置 -->
+   <!-- Publisher configuration for topic chatter -->
     <publisher profile_name="/chatter">
         <historyMemoryPolicy>DYNAMIC</historyMemoryPolicy>
         <matchedSubscribersAllocation>

@@ -10,7 +10,7 @@ Talker::Talker(const rclcpp::NodeOptions &options) : Node("talker", options) {
   auto callback = [&]() -> void {
     std_msgs::msg::Int32::UniquePtr msg(new std_msgs::msg::Int32());
     msg->data = count_++;
-    RCLCPP_INFO(this->get_logger(), "发布数据:%d(0x%lX)", msg->data,
+    RCLCPP_INFO(this->get_logger(), "Published data: %d(0x%lX)", msg->data,
                 reinterpret_cast<std::uintptr_t>(msg.get()));
     pub_->publish(std::move(msg));
   };

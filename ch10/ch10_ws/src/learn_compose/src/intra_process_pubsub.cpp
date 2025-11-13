@@ -6,8 +6,8 @@ int main(int argc, char *argv[]) {
   rclcpp::init(argc, argv);
   rclcpp::executors::SingleThreadedExecutor executor;
 
-  rclcpp::NodeOptions options;           // 创建节点选项
-  options.use_intra_process_comms(true); // 使用进程内通信
+  rclcpp::NodeOptions options;           // Create node options
+  options.use_intra_process_comms(true); // Use intra-process communication
   auto talker = std::make_shared<learn_compose::Talker>(options);
   auto listener = std::make_shared<learn_compose::Listener>(options);
 
