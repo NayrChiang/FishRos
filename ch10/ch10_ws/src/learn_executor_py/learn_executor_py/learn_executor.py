@@ -22,15 +22,15 @@ class LearnExecutorNode(Node):
 
     def timer_callback(self):
         msg = String()
-        msg.data = f'话题发布，线程ID:{threading.get_ident()} 线程总数:{threading.active_count()}'
+        msg.data = f'Topic published, Thread ID: {threading.get_ident()}, Total threads: {threading.active_count()}'
         self.get_logger().info(msg.data)
         self.publisher.publish(msg)
 
     def add_two_ints_callback(self, request: AddTwoInts.Request, response: AddTwoInts.Response):
-        self.get_logger().info(f'处理服务，线程ID:{threading.get_ident()}')
-        time.sleep(10)  # 模拟处理延时
+        self.get_logger().info(f'Processing service, Thread ID: {threading.get_ident()}')
+        time.sleep(10)  # Simulate processing delay
         response.sum = request.a + request.b
-        self.get_logger().info(f'处理完成，线程ID:{threading.get_ident()}')
+        self.get_logger().info(f'Processing completed, Thread ID: {threading.get_ident()}')
         return response
 
 

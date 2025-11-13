@@ -12,7 +12,7 @@ public:
         std::chrono::seconds(1),
         std::bind(&LearnExecutorNode::timer_callback, this));
     service_callback_group_ = this->create_callback_group(
-        rclcpp::CallbackGroupType::MutuallyExclusive);  // 互斥回调组
+        rclcpp::CallbackGroupType::MutuallyExclusive);  // Mutually exclusive callback group
     service_ = this->create_service<example_interfaces::srv::AddTwoInts>(
         "add_two_ints",
         std::bind(&LearnExecutorNode::add_two_ints_callback, this,
@@ -23,14 +23,14 @@ public:
 private:
   void timer_callback() {
     auto msg = std_msgs::msg::String();
-    msg.data = "话题发布：" + thread_info();
+    msg.data = "Topic published: " + thread_info();
     RCLCPP_INFO(this->get_logger(), msg.data.c_str());
     publisher_->publish(msg);
   }
 
   std::string thread_info() {
     std::ostringstream thread_str;
-    thread_str << "线程ID：" << std::this_thread::get_id();
+    thread_str << "Thread ID: " << std::this_thread::get_id();
     return thread_str.str();
   }
 
@@ -38,10 +38,10 @@ private:
       const std::shared_ptr<example_interfaces::srv::AddTwoInts::Request>
           request,
       std::shared_ptr<example_interfaces::srv::AddTwoInts::Response> response) {
-    RCLCPP_INFO(this->get_logger(), "服务开始处理：%s", thread_info().c_str());
+    RCLCPP_INFO(this->get_logger(), "Service processing started: %s", thread_info().c_str());
     std::this_thread::sleep_for(std::chrono::seconds(10));
     response->sum = request->a + request->b;
-    RCLCPP_INFO(this->get_logger(), "服务处理完成：%s", thread_info().c_str());
+    RCLCPP_INFO(this->get_logger(), "Service processing completed: %s", thread_info().c_str());
   }
 
   rclcpp::Publisher<std_msgs::msg::String>::SharedPtr publisher_;
