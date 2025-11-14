@@ -1,3 +1,0 @@
-/home/nayr/ch1/CMakeFiles/learn_cmake.dir
-/home/nayr/ch1/CMakeFiles/edit_cache.dir
-/home/nayr/ch1/CMakeFiles/rebuild_cache.dir

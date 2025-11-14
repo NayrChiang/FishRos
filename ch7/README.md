@@ -4,11 +4,55 @@ This chapter demonstrates autonomous navigation using ROS 2 Navigation2 stack wi
 
 ## Overview
 
+This chapter covers autonomous navigation using the ROS 2 Navigation2 stack. You'll learn about localization (AMCL), path planning, costmaps, and how to build a complete autonomous patrol system.
+
 This workspace contains:
 - **FishBot robot model** with sensors (LIDAR, IMU, camera)
 - **Navigation2 configuration** for autonomous navigation
 - **Autonomous patrol system** that navigates through predefined waypoints
 - **Gazebo simulation** environment for testing
+
+## Key Concepts
+
+### Navigation2 Stack
+
+Navigation2 is ROS 2's navigation framework that provides:
+- **Localization**: Determining robot's position in the map (AMCL)
+- **Path Planning**: Computing paths from current position to goal
+- **Path Following**: Executing the planned path (controller)
+- **Recovery Behaviors**: Handling failures and obstacles
+- **Costmaps**: Representing obstacles and safe areas
+
+### AMCL (Adaptive Monte Carlo Localization)
+
+AMCL is a probabilistic localization algorithm:
+- Uses particle filters to estimate robot pose
+- Requires a map and sensor data (LIDAR)
+- Continuously updates pose estimate
+- Handles uncertainty and sensor noise
+
+### Costmaps
+
+Costmaps represent the environment as a grid:
+- **Global Costmap**: Entire map for long-term planning
+- **Local Costmap**: Immediate surroundings for obstacle avoidance
+- **Layers**: Obstacle layer, inflation layer, static layer
+- **Cost Values**: 0 (free) to 255 (lethal obstacle)
+
+### Path Planning
+
+Navigation2 uses planners to find paths:
+- **Global Planner**: Plans path through entire map
+- **Local Planner/Controller**: Follows path, avoids obstacles
+- **Recovery Behaviors**: Spin, backup when stuck
+
+### Autonomous Patrol
+
+Patrol system components:
+- **Waypoint Navigation**: Sequential goal navigation
+- **Pose Initialization**: Setting initial robot position
+- **Status Monitoring**: Tracking navigation progress
+- **Image Capture**: Saving images at waypoints
 
 ## Package Structure
 

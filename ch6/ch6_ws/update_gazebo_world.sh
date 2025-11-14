@@ -1,31 +1,31 @@
 #!/bin/bash
 
-echo "🔄 Gazebo 世界更新工作流程"
+echo "🔄 Gazebo World Update Workflow"
 echo "================================"
 
-# 步骤1: 停止 Gazebo
-echo "1️⃣ 停止 Gazebo..."
+# Step 1: Stop Gazebo
+echo "1️⃣ Stopping Gazebo..."
 ./stop_gazebo.sh
 
-# 步骤2: 重新构建包
+# Step 2: Rebuild package
 echo ""
-echo "2️⃣ 重新构建包..."
+echo "2️⃣ Rebuilding package..."
 colcon build --packages-select fishbot_description
 
 if [ $? -eq 0 ]; then
-    echo "✅ 构建成功"
+    echo "✅ Build successful"
 else
-    echo "❌ 构建失败"
+    echo "❌ Build failed"
     exit 1
 fi
 
-# 步骤3: 重新启动 Gazebo
+# Step 3: Restart Gazebo
 echo ""
-echo "3️⃣ 重新启动 Gazebo..."
-echo "正在启动 Gazebo，请稍等..."
+echo "3️⃣ Restarting Gazebo..."
+echo "Starting Gazebo, please wait..."
 source install/setup.bash
 ros2 launch fishbot_description gazebo_sim.launch.py &
 
 echo ""
-echo "✅ 工作流程完成！"
-echo "Gazebo 应该正在启动，请检查 GUI 窗口"
+echo "✅ Workflow completed!"
+echo "Gazebo should be starting, please check the GUI window"
